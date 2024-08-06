@@ -17,6 +17,7 @@ Sublime Text 2/3/4 Son Kullanıcı için Yerelleştirme Aracı ve Yerelleştiril
 - pt_BR [Brezilya Portekizcesi](readme/README.pt_BR.md)
 - ru [Rusça](readme/README.ru.md)
 - sv_SE [İsveççe](readme/README.sv_SE.md)
+- tr [Türkçe](readme/README.tr.md)
 - zh_CN [Basitleştirilmiş Çince](readme/README.zh_CN.md)
 - zh_TW [Geleneksel Çince](readme/README.zh_TW.md)
 
@@ -93,6 +94,7 @@ Sublime Text 2/3/4 Son Kullanıcı için Yerelleştirme Aracı ve Yerelleştiril
 - pt Brezilya Portekizcesi *by [JNylson](https://github.com/jnylson)*
 - ru Rusça *by [Dimox](http://dimox.name) & [Ant0sh](https://github.com/Ant0sh) & [Maksim Arhipov](https://github.com/OSPanel)*
 - sv_SE İsveççe *by [H2SO4JB](https://github.com/H2SO4JB)*
+- tr Türkçe *by [hakantr](https://github.com/hakantr)*
 - zh_CN Basitleştirilmiş Çince *by [Zam](https://github.com/zam1024t)*
 - zh_TW Geleneksel Çince *by [Zam](https://github.com/zam1024t)*
 
