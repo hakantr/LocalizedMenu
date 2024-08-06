@@ -15,7 +15,7 @@
 				"mnemonic": "S",
 				"children":
 				[
-					{ "command": "reopen_last_file", "args": {"source": "window"}, "caption": "Kapatılan Dosyayı Yeniden Aç" },
+					{ "command": "reopen_last_file", "args": {"source": "window"}, "caption": "Son Dosyaoları Yeniden Aç" },
 					{ "caption": "-" },
 					{ "command": "open_recent_file", "args": {"index": 0 } },
 					{ "command": "open_recent_file", "args": {"index": 1 } },
@@ -47,7 +47,7 @@
 				]
 			},
 			{
-				"caption": "Kodlama ile Yeniden Aç",
+				"caption": "Yeniden Aç - Kodlama ile",
 				"id": "reopen_with_encoding",
 				"children":
 				[
@@ -94,7 +94,7 @@
 			{ "command": "clone_file", "args": {"add_to_selection": true, "retain_viewport_position": true}, "caption": "Görünümü Kopyala", "mnemonic": "G" },
 			{ "command": "save", "args": {"async": true}, "caption": "Kaydet", "mnemonic": "K" },
 			{
-				"caption": "Kodlama ile Kaydet",
+				"caption": "Kaydet - Kodlama ile",
 				"id": "save_with_encoding",
 				"children":
 				[
