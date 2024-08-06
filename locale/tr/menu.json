@@ -1,0 +1,27 @@
+[
+  { "id": "preferences", "children": [
+    { "id": "package-settings", "caption": "Paket-Ayarları", "children":
+    [
+      { "caption": "LocalizedMenu", "children":
+      [
+        { "caption": "Ayarlar – Varsayılan", "command": "open_file", "args": {"file": "${packages}/LocalizedMenu/LocalizedMenu.sublime-settings"} },
+        { "caption": "Ayarlar – Kullanıcı", "command": "open_file", "args": {"file": "${packages}/User/LocalizedMenu.sublime-settings"} },
+        { "caption": "-" }
+      ]
+      }
+    ]
+    },
+    { "caption": "-" },
+    { "caption": "Diller", "id": "locales", "children":
+    [
+      { "caption": "Algıla", "command": "localize_run", "args": {"action": "detect"} },
+      { "caption": "Sıfırla", "command": "localize_run", "args": {"action": "reset"} },
+      { "caption": "Dil Ekle…", "command": "localize_run", "args": {"action": "add"} },
+      { "caption": "Dil Gönder…", "command": "localize_run", "args": {"action": "submit"} },
+      { "caption": "-" }
+    ]
+    },
+    { "caption": "-" }
+  ]
+  }
+]
