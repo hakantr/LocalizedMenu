@@ -87,7 +87,7 @@
       { "caption": "Batı Avrupa (Mac Roman)", "command": "reopen", "args": { "encoding": "Western (Mac Roman)" } },
       { "caption": "Batı Avrupa (Windows 1252)", "command": "reopen", "args": { "encoding": "Western (Windows 1252)" } },
       { "caption": "-" },
-      { "caption": "Onaltılık", "command": "reopen", "args": { "encoding": "Hexadecimal" }  }
+      { "caption": "Onaltılık", "command": "reopen", "args": { "encoding": "Hexadecimal" } }
     ]
   }
 ]
