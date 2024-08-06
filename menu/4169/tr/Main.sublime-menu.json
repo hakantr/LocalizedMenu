@@ -15,7 +15,7 @@
 				"mnemonic": "S",
 				"children":
 				[
-					{ "command": "reopen_last_file", "args": {"source": "window"}, "caption": "Son Dosyaoları Yeniden Aç" },
+					{ "command": "reopen_last_file", "args": {"source": "window"}, "caption": "Son Dosyalardan Aç" },
 					{ "caption": "-" },
 					{ "command": "open_recent_file", "args": {"index": 0 } },
 					{ "command": "open_recent_file", "args": {"index": 1 } },
@@ -43,11 +43,11 @@
 					{ "command": "open_recent_folder", "args": {"index": 10 } },
 					{ "command": "open_recent_folder", "args": {"index": 11 } },
 					{ "caption": "-" },
-					{ "command": "clear_recent_files", "caption": "Öğeleri Temizle" }
+					{ "command": "clear_recent_files", "caption": "Ögeleri Temizle" }
 				]
 			},
 			{
-				"caption": "Yeniden Aç - Kodlama ile",
+				"caption": "Kodlama ile Yeniden Aç",
 				"id": "reopen_with_encoding",
 				"children":
 				[
@@ -91,10 +91,10 @@
 					{ "caption": "Onaltılık", "command": "reopen", "args": { "encoding": "Hexadecimal" } }
 				]
 			},
-			{ "command": "clone_file", "args": {"add_to_selection": true, "retain_viewport_position": true}, "caption": "Görünümü Kopyala", "mnemonic": "G" },
+			{ "command": "clone_file", "args": {"add_to_selection": true, "retain_viewport_position": true}, "caption": "Dosyayı Çoğalt", "mnemonic": "Ç" },
 			{ "command": "save", "args": {"async": true}, "caption": "Kaydet", "mnemonic": "K" },
 			{
-				"caption": "Kaydet - Kodlama ile",
+				"caption": "Kodlama ile Kaydet",
 				"id": "save_with_encoding",
 				"children":
 				[
@@ -213,8 +213,9 @@
 					{ "command": "revert_modification", "caption": "Değişikliği Geri Al" },
 					{ "command": "toggle_inline_diff", "caption": "Satır İçi Farkı Aç/Kapat" },
 					{ "caption": "-" },
-					{ "command": "run_macro_file", "args": {"file": "res://Packages/Default/Add Line Before.sublime-macro"}, "caption": "Önce Satır Ekle" },
-					{ "command": "run_macro_file", "args": {"file": "res://Packages/Default/Add Line.sublime-macro"}, "caption": "Sonra Satır Ekle" },
+					{ "command": "run_macro_file", "args": {"file": "res://Packages/Default/Add Line Before.sublime-macro"}, "caption": "Üstüne Satır Ekle" },
+					{ "command": "run_macro_file", "args": {"file": "res://Packages/Default/Add Line.sublime-macro"},
+						"caption": "Altına Satır Ekle" },
 					{ "caption": "-" },
 					{ "command": "delete_word", "args": { "forward": true }, "caption": "Sonraki Kelimeyi Sil" },
 					{ "command": "delete_word", "args": { "forward": false }, "caption": "Önceki Kelimeyi Sil" },
@@ -259,14 +260,14 @@
 					{ "command": "unfold_all", "caption": "Tümünü Aç" },
 					{ "caption": "-" },
 					{ "caption": "Tümünü Katla", "command": "fold_by_level", "args": {"level": 1} },
-					{ "caption": "Katlama Seviyesi: 2", "command": "fold_by_level", "args": {"level": 2} },
-					{ "caption": "Katlama Seviyesi: 3", "command": "fold_by_level", "args": {"level": 3} },
-					{ "caption": "Katlama Seviyesi: 4", "command": "fold_by_level", "args": {"level": 4} },
-					{ "caption": "Katlama Seviyesi: 5", "command": "fold_by_level", "args": {"level": 5} },
-					{ "caption": "Katlama Seviyesi: 6", "command": "fold_by_level", "args": {"level": 6} },
-					{ "caption": "Katlama Seviyesi: 7", "command": "fold_by_level", "args": {"level": 7} },
-					{ "caption": "Katlama Seviyesi: 8", "command": "fold_by_level", "args": {"level": 8} },
-					{ "caption": "Katlama Seviyesi: 9", "command": "fold_by_level", "args": {"level": 9} },
+					{ "caption": "Seviyesi: 2", "command": "fold_by_level", "args": {"level": 2} },
+					{ "caption": "Seviyesi: 3", "command": "fold_by_level", "args": {"level": 3} },
+					{ "caption": "Seviyesi: 4", "command": "fold_by_level", "args": {"level": 4} },
+					{ "caption": "Seviyesi: 5", "command": "fold_by_level", "args": {"level": 5} },
+					{ "caption": "Seviyesi: 6", "command": "fold_by_level", "args": {"level": 6} },
+					{ "caption": "Seviyesi: 7", "command": "fold_by_level", "args": {"level": 7} },
+					{ "caption": "Seviyesi: 8", "command": "fold_by_level", "args": {"level": 8} },
+					{ "caption": "Seviyesi: 9", "command": "fold_by_level", "args": {"level": 9} },
 					{ "caption": "-" },
 					{ "command": "fold_tag_attributes", "caption": "Etiket Özelliklerini Katla" }
 				]
@@ -287,17 +288,17 @@
 				]
 			},
 			{
-				"caption": "Sarma",
+				"caption": "Paragrafı Böl",
 				"id": "wrap",
 				"children":
 				[
-					{ "command": "wrap_lines", "caption": "Paragrafı Kurala Sar" },
-					{ "command": "wrap_lines", "args": {"width": 70}, "caption": "70 Karakter Paragrafı Sar" },
-					{ "command": "wrap_lines", "args": {"width": 72}, "caption": "72 Karakter Paragrafı Sar" },
-					{ "command": "wrap_lines", "args": {"width": 78}, "caption": "78 Karakter Paragrafı Sar" },
-					{ "command": "wrap_lines", "args": {"width": 80}, "caption": "80 Karakter Paragrafı Sar" },
-					{ "command": "wrap_lines", "args": {"width": 100}, "caption": "100 Karakter Paragrafı Sar" },
-					{ "command": "wrap_lines", "args": {"width": 120}, "caption": "120 Karakter Paragrafı Sar" }
+					{ "command": "wrap_lines", "caption": "Paragrafı Cetvelde Böl" },
+					{ "command": "wrap_lines", "args": {"width": 70}, "caption": "Paragrafı 70. Karakterde Böl" },
+					{ "command": "wrap_lines", "args": {"width": 72}, "caption": "Paragrafı 72. Karakterde Böl" },
+					{ "command": "wrap_lines", "args": {"width": 78}, "caption": "Paragrafı 78. Karakterde Böl" },
+					{ "command": "wrap_lines", "args": {"width": 80}, "caption": "Paragrafı 80. Karakterde Böl" },
+					{ "command": "wrap_lines", "args": {"width": 100}, "caption": "Paragrafı 100. Karakterde Böl" },
+					{ "command": "wrap_lines", "args": {"width": 120}, "caption": "Paragrafı 120. Karakterde Böl" }
 				]
 			},
 			{ "command": "auto_complete", "caption": "Tamamlamaları Göster" },
