@@ -8,18 +8,18 @@ Sublime Text 2/3/4 Son Kullanıcı için Yerelleştirme Aracı ve Yerelleştiril
 - Yeni sürüm İngilizce menülerini otomatik olarak açar
 
 ### README.md
-- de_DE [Almanca](readme/README.de_DE.md)
+- de_DE [Almanca](README.de_DE.md)
 - en [İngilizce](README.md)
-- es_ES [İspanyolca](readme/README.es_ES.md)
-- fr_FR [Fransızca](readme/README.fr_FR.md)
-- hu [Macarca](readme/README.hu.md)
-- hy [Ermenice](readme/README.hy.md)
-- pt_BR [Brezilya Portekizcesi](readme/README.pt_BR.md)
-- ru [Rusça](readme/README.ru.md)
-- sv_SE [İsveççe](readme/README.sv_SE.md)
-- tr [Türkçe](readme/README.tr.md)
-- zh_CN [Basitleştirilmiş Çince](readme/README.zh_CN.md)
-- zh_TW [Geleneksel Çince](readme/README.zh_TW.md)
+- es_ES [İspanyolca](README.es_ES.md)
+- fr_FR [Fransızca](README.fr_FR.md)
+- hu [Macarca](README.hu.md)
+- hy [Ermenice](README.hy.md)
+- pt_BR [Brezilya Portekizcesi](README.pt_BR.md)
+- ru [Rusça](README.ru.md)
+- sv_SE [İsveççe](README.sv_SE.md)
+- tr [Türkçe](README.tr.md)
+- zh_CN [Basitleştirilmiş Çince](README.zh_CN.md)
+- zh_TW [Geleneksel Çince](README.zh_TW.md)
 
 ### Bu proje ayrıca şu adreslerde barındırılmaktadır:
 - [GitHub](https://github.com/zam1024t/LocalizedMenu)
