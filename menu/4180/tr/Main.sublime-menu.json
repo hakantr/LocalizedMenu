@@ -1,21 +1,21 @@
 [
 	{
-		"caption": "File",
-		"mnemonic": "F",
+		"caption": "Dosya",
+		"mnemonic": "D",
 		"id": "file",
 		"children":
 		[
-			{ "command": "new_file", "caption": "New File", "mnemonic": "N" },
+			{ "command": "new_file", "caption": "Yeni Dosya", "mnemonic": "Y" },
 
-			{ "command": "prompt_open_file", "caption": "Open File…", "mnemonic": "O", "platform": "!OSX" },
-			{ "command": "prompt_open_folder", "caption": "Open Folder…", "platform": "!OSX" },
-			{ "command": "prompt_open", "caption": "Open…", "platform": "OSX" },
+			{ "command": "prompt_open_file", "caption": "Dosya Aç…", "mnemonic": "D", "platform": "!OSX" },
+			{ "command": "prompt_open_folder", "caption": "Klasör Aç…", "platform": "!OSX" },
+			{ "command": "prompt_open", "caption": "Aç…", "platform": "OSX" },
 			{
-				"caption": "Open Recent",
-				"mnemonic": "R",
+				"caption": "Son Açılanlar",
+				"mnemonic": "S",
 				"children":
 				[
-					{ "command": "reopen_last_file", "args": {"source": "window"}, "caption": "Reopen Closed File" },
+					{ "command": "reopen_last_file", "args": {"source": "window"}, "caption": "Son Dosyalardan Aç" },
 					{ "caption": "-" },
 					{ "command": "open_recent_file", "args": {"index": 0 } },
 					{ "command": "open_recent_file", "args": {"index": 1 } },
@@ -43,11 +43,11 @@
 					{ "command": "open_recent_folder", "args": {"index": 10 } },
 					{ "command": "open_recent_folder", "args": {"index": 11 } },
 					{ "caption": "-" },
-					{ "command": "clear_recent_files", "caption": "Clear Items" }
+					{ "command": "clear_recent_files", "caption": "Ögeleri Temizle" }
 				]
 			},
 			{
-				"caption": "Reopen with Encoding",
+				"caption": "Kodlama ile Yeniden Aç",
 				"id": "reopen_with_encoding",
 				"children":
 				[
@@ -55,233 +55,234 @@
 					{ "caption": "UTF-16 LE", "command": "reopen", "args": { "encoding": "utf-16 le" } },
 					{ "caption": "UTF-16 BE", "command": "reopen", "args": { "encoding": "utf-16 be" } },
 					{ "caption": "-" },
-					{ "caption": "Arabic (ISO 8859-6)", "command": "reopen", "args": { "encoding": "Arabic (ISO 8859-6)" } },
-					{ "caption": "Arabic (Windows 1256)", "command": "reopen", "args": { "encoding": "Arabic (Windows 1256)" } },
-					{ "caption": "Baltic (ISO 8859-4)", "command": "reopen", "args": { "encoding": "Baltic (ISO 8859-4)" } },
-					{ "caption": "Baltic (Windows 1257)", "command": "reopen", "args": { "encoding": "Baltic (Windows 1257)" } },
-					{ "caption": "Celtic (ISO 8859-14)", "command": "reopen", "args": { "encoding": "Celtic (ISO 8859-14)" } },
-					{ "caption": "Central European (ISO 8859-2)", "command": "reopen", "args": { "encoding": "Central European (ISO 8859-2)" } },
-					{ "caption": "Central European (Mac)", "command": "reopen", "args": { "encoding": "Central European (Mac)" } },
-					{ "caption": "Central European (Windows 1250)", "command": "reopen", "args": { "encoding": "Central European (Windows 1250)" } },
-					{ "caption": "Chinese (GB18030)", "command": "reopen", "args": { "encoding": "Chinese (GB18030)" } },
-					{ "caption": "Cyrillic (ISO 8859-5)", "command": "reopen", "args": { "encoding": "Cyrillic (ISO 8859-5)" } },
-					{ "caption": "Cyrillic (KOI8-R)", "command": "reopen", "args": { "encoding": "Cyrillic (KOI8-R)" } },
-					{ "caption": "Cyrillic (KOI8-U)", "command": "reopen", "args": { "encoding": "Cyrillic (KOI8-U)" } },
-					{ "caption": "Cyrillic (Windows 1251)", "command": "reopen", "args": { "encoding": "Cyrillic (Windows 1251)" } },
-					{ "caption": "Cyrillic (Windows 866)", "command": "reopen", "args": { "encoding": "Cyrillic (Windows 866)" } },
+					{ "caption": "Arapça (ISO 8859-6)", "command": "reopen", "args": { "encoding": "Arabic (ISO 8859-6)" } },
+					{ "caption": "Arapça (Windows 1256)", "command": "reopen", "args": { "encoding": "Arabic (Windows 1256)" } },
+					{ "caption": "Baltık (ISO 8859-4)", "command": "reopen", "args": { "encoding": "Baltic (ISO 8859-4)" } },
+					{ "caption": "Baltık (Windows 1257)", "command": "reopen", "args": { "encoding": "Baltic (Windows 1257)" } },
+					{ "caption": "Keltik (ISO 8859-14)", "command": "reopen", "args": { "encoding": "Celtic (ISO 8859-14)" } },
+					{ "caption": "Orta Avrupa (ISO 8859-2)", "command": "reopen", "args": { "encoding": "Central European (ISO 8859-2)" } },
+					{ "caption": "Orta Avrupa (Mac)", "command": "reopen", "args": { "encoding": "Central European (Mac)" } },
+					{ "caption": "Orta Avrupa (Windows 1250)", "command": "reopen", "args": { "encoding": "Central European (Windows 1250)" } },
+					{ "caption": "Çince (GB18030)", "command": "reopen", "args": { "encoding": "Chinese (GB18030)" } },
+					{ "caption": "Kiril (ISO 8859-5)", "command": "reopen", "args": { "encoding": "Cyrillic (ISO 8859-5)" } },
+					{ "caption": "Kiril (KOI8-R)", "command": "reopen", "args": { "encoding": "Cyrillic (KOI8-R)" } },
+					{ "caption": "Kiril (KOI8-U)", "command": "reopen", "args": { "encoding": "Cyrillic (KOI8-U)" } },
+					{ "caption": "Kiril (Windows 1251)", "command": "reopen", "args": { "encoding": "Cyrillic (Windows 1251)" } },
+					{ "caption": "Kiril (Windows 866)", "command": "reopen", "args": { "encoding": "Cyrillic (Windows 866)" } },
 					{ "caption": "DOS (CP 437)", "command": "reopen", "args": { "encoding": "DOS (CP 437)" } },
-					{ "caption": "Estonian (ISO 8859-13)", "command": "reopen", "args": { "encoding": "Estonian (ISO 8859-13)" } },
-					{ "caption": "Greek (ISO 8859-7)", "command": "reopen", "args": { "encoding": "Greek (ISO 8859-7)" } },
-					{ "caption": "Greek (Windows 1253)", "command": "reopen", "args": { "encoding": "Greek (Windows 1253)" } },
-					{ "caption": "Hebrew (CP 862)", "command": "reopen", "args": { "encoding": "Hebrew (CP 862)" } },
-					{ "caption": "Hebrew (ISO 8859-8)", "command": "reopen", "args": { "encoding": "Hebrew (ISO 8859-8)" } },
-					{ "caption": "Hebrew (Windows 1255)", "command": "reopen", "args": { "encoding": "Hebrew (Windows 1255)" } },
-					{ "caption": "Nordic (ISO 8859-10)", "command": "reopen", "args": { "encoding": "Nordic (ISO 8859-10)" } },
-					{ "caption": "Nordic (Windows 865)", "command": "reopen", "args": { "encoding": "Nordic (Windows 865)" } },
-					{ "caption": "Romanian (ISO 8859-16)", "command": "reopen", "args": { "encoding": "Romanian (ISO 8859-16)" } },
-					{ "caption": "Turkish (ISO 8859-9)", "command": "reopen", "args": { "encoding": "Turkish (ISO 8859-9)" } },
-					{ "caption": "Turkish (Windows 1254)", "command": "reopen", "args": { "encoding": "Turkish (Windows 1254)" } },
-					{ "caption": "Vietnamese (Windows 1258)", "command": "reopen", "args": { "encoding": "Vietnamese (Windows 1258)" } },
-					{ "caption": "Western (ISO 8859-1)", "command": "reopen", "args": { "encoding": "Western (ISO 8859-1)" } },
-					{ "caption": "Western (ISO 8859-15)", "command": "reopen", "args": { "encoding": "Western (ISO 8859-15)" } },
-					{ "caption": "Western (ISO 8859-3)", "command": "reopen", "args": { "encoding": "Western (ISO 8859-3)" } },
-					{ "caption": "Western (Mac Roman)", "command": "reopen", "args": { "encoding": "Western (Mac Roman)" } },
-					{ "caption": "Western (Windows 1252)", "command": "reopen", "args": { "encoding": "Western (Windows 1252)" } },
+					{ "caption": "Estonca (ISO 8859-13)", "command": "reopen", "args": { "encoding": "Estonian (ISO 8859-13)" } },
+					{ "caption": "Yunanca (ISO 8859-7)", "command": "reopen", "args": { "encoding": "Greek (ISO 8859-7)" } },
+					{ "caption": "Yunanca (Windows 1253)", "command": "reopen", "args": { "encoding": "Greek (Windows 1253)" } },
+					{ "caption": "İbranice (CP 862)", "command": "reopen", "args": { "encoding": "Hebrew (CP 862)" } },
+					{ "caption": "İbranice (ISO 8859-8)", "command": "reopen", "args": { "encoding": "Hebrew (ISO 8859-8)" } },
+					{ "caption": "İbranice (Windows 1255)", "command": "reopen", "args": { "encoding": "Hebrew (Windows 1255)" } },
+					{ "caption": "Nordik (ISO 8859-10)", "command": "reopen", "args": { "encoding": "Nordic (ISO 8859-10)" } },
+					{ "caption": "Nordik (Windows 865)", "command": "reopen", "args": { "encoding": "Nordic (Windows 865)" } },
+					{ "caption": "Rumen (ISO 8859-16)", "command": "reopen", "args": { "encoding": "Romanian (ISO 8859-16)" } },
+					{ "caption": "Türkçe (ISO 8859-9)", "command": "reopen", "args": { "encoding": "Turkish (ISO 8859-9)" } },
+					{ "caption": "Türkçe (Windows 1254)", "command": "reopen", "args": { "encoding": "Turkish (Windows 1254)" } },
+					{ "caption": "Vietnamca (Windows 1258)", "command": "reopen", "args": { "encoding": "Vietnamese (Windows 1258)" } },
+					{ "caption": "Batı Avrupa (ISO 8859-1)", "command": "reopen", "args": { "encoding": "Western (ISO 8859-1)" } },
+					{ "caption": "Batı Avrupa (ISO 8859-15)", "command": "reopen", "args": { "encoding": "Western (ISO 8859-15)" } },
+					{ "caption": "Batı Avrupa (ISO 8859-3)", "command": "reopen", "args": { "encoding": "Western (ISO 8859-3)" } },
+					{ "caption": "Batı Avrupa (Mac Roman)", "command": "reopen", "args": { "encoding": "Western (Mac Roman)" } },
+					{ "caption": "Batı Avrupa (Windows 1252)", "command": "reopen", "args": { "encoding": "Western (Windows 1252)" } },
 					{ "caption": "-" },
-					{ "caption": "Hexadecimal", "command": "reopen", "args": { "encoding": "Hexadecimal" } }
+					{ "caption": "Onaltılık", "command": "reopen", "args": { "encoding": "Hexadecimal" } }
 				]
 			},
-			{ "command": "force_reopen_as", "args": {"type": "image"}, "caption": "Reopen File as Image" },
-			{ "command": "force_reopen_as", "args": {"type": "text"}, "caption": "Reopen File as Text" },
-			{ "command": "clone_file", "args": {"add_to_selection": true, "retain_viewport_position": true}, "caption": "Split View", "mnemonic": "e" },
-			{ "command": "save", "args": {"async": true}, "caption": "Save", "mnemonic": "S" },
+			{ "command": "force_reopen_as", "args": {"type": "image"}, "caption": "Dosyayı Resim Olarak Yeniden Aç" },
+			{ "command": "force_reopen_as", "args": {"type": "text"}, "caption": "Dosyayı Metin Olarak Yeniden Aç" },
+			{ "command": "clone_file", "args": {"add_to_selection": true, "retain_viewport_position": true}, "caption": "Dosyayı Çoğalt", "mnemonic": "Ç" },
+			{ "command": "save", "args": {"async": true}, "caption": "Kaydet", "mnemonic": "K" },
 			{
-				"caption": "Save with Encoding",
+				"caption": "Kodlama ile Kaydet",
 				"id": "save_with_encoding",
 				"children":
 				[
 					{ "caption": "UTF-8", "command": "save", "args": { "async": true, "encoding": "utf-8" } },
-					{ "caption": "UTF-8 with BOM", "command": "save", "args": { "async": true, "encoding": "utf-8 with bom" } },
+					{ "caption": "UTF-8 ile BOM", "command": "save", "args": { "async": true, "encoding": "utf-8 with bom" } },
 					{ "caption": "UTF-16 LE", "command": "save", "args": { "async": true, "encoding": "utf-16 le" } },
-					{ "caption": "UTF-16 LE with BOM", "command": "save", "args": { "async": true, "encoding": "utf-16 le with bom" } },
+					{ "caption": "UTF-16 LE ile BOM", "command": "save", "args": { "async": true, "encoding": "utf-16 le with bom" } },
 					{ "caption": "UTF-16 BE", "command": "save", "args": { "async": true, "encoding": "utf-16 be" } },
-					{ "caption": "UTF-16 BE with BOM", "command": "save", "args": { "async": true, "encoding": "utf-16 be with bom" } },
+					{ "caption": "UTF-16 BE ile BOM", "command": "save", "args": { "async": true, "encoding": "utf-16 be with bom" } },
 					{ "caption": "-" },
-					{ "caption": "Arabic (ISO 8859-6)", "command": "save", "args": { "async": true, "encoding": "Arabic (ISO 8859-6)" } },
-					{ "caption": "Arabic (Windows 1256)", "command": "save", "args": { "async": true, "encoding": "Arabic (Windows 1256)" } },
-					{ "caption": "Baltic (ISO 8859-4)", "command": "save", "args": { "async": true, "encoding": "Baltic (ISO 8859-4)" } },
-					{ "caption": "Baltic (Windows 1257)", "command": "save", "args": { "async": true, "encoding": "Baltic (Windows 1257)" } },
-					{ "caption": "Celtic (ISO 8859-14)", "command": "save", "args": { "async": true, "encoding": "Celtic (ISO 8859-14)" } },
-					{ "caption": "Central European (ISO 8859-2)", "command": "save", "args": { "async": true, "encoding": "Central European (ISO 8859-2)" } },
-					{ "caption": "Central European (Mac)", "command": "save", "args": { "async": true, "encoding": "Central European (Mac)" } },
-					{ "caption": "Central European (Windows 1250)", "command": "save", "args": { "async": true, "encoding": "Central European (Windows 1250)" } },
-					{ "caption": "Chinese (GB18030)", "command": "save", "args": { "async": true, "encoding": "Chinese (GB18030)" } },
-					{ "caption": "Cyrillic (ISO 8859-5)", "command": "save", "args": { "async": true, "encoding": "Cyrillic (ISO 8859-5)" } },
-					{ "caption": "Cyrillic (KOI8-R)", "command": "save", "args": { "async": true, "encoding": "Cyrillic (KOI8-R)" } },
-					{ "caption": "Cyrillic (KOI8-U)", "command": "save", "args": { "async": true, "encoding": "Cyrillic (KOI8-U)" } },
-					{ "caption": "Cyrillic (Windows 1251)", "command": "save", "args": { "async": true, "encoding": "Cyrillic (Windows 1251)" } },
-					{ "caption": "Cyrillic (Windows 866)", "command": "save", "args": { "async": true, "encoding": "Cyrillic (Windows 866)" } },
+					{ "caption": "Arapça (ISO 8859-6)", "command": "save", "args": { "async": true, "encoding": "Arabic (ISO 8859-6)" } },
+					{ "caption": "Arapça (Windows 1256)", "command": "save", "args": { "async": true, "encoding": "Arabic (Windows 1256)" } },
+					{ "caption": "Baltık (ISO 8859-4)", "command": "save", "args": { "async": true, "encoding": "Baltic (ISO 8859-4)" } },
+					{ "caption": "Baltık (Windows 1257)", "command": "save", "args": { "async": true, "encoding": "Baltic (Windows 1257)" } },
+					{ "caption": "Keltik (ISO 8859-14)", "command": "save", "args": { "async": true, "encoding": "Celtic (ISO 8859-14)" } },
+					{ "caption": "Orta Avrupa (ISO 8859-2)", "command": "save", "args": { "async": true, "encoding": "Central European (ISO 8859-2)" } },
+					{ "caption": "Orta Avrupa (Mac)", "command": "save", "args": { "async": true, "encoding": "Central European (Mac)" } },
+					{ "caption": "Orta Avrupa (Windows 1250)", "command": "save", "args": { "async": true, "encoding": "Central European (Windows 1250)" } },
+					{ "caption": "Çince (GB18030)", "command": "save", "args": { "async": true, "encoding": "Chinese (GB18030)" } },
+					{ "caption": "Kiril (ISO 8859-5)", "command": "save", "args": { "async": true, "encoding": "Cyrillic (ISO 8859-5)" } },
+					{ "caption": "Kiril (KOI8-R)", "command": "save", "args": { "async": true, "encoding": "Cyrillic (KOI8-R)" } },
+					{ "caption": "Kiril (KOI8-U)", "command": "save", "args": { "async": true, "encoding": "Cyrillic (KOI8-U)" } },
+					{ "caption": "Kiril (Windows 1251)", "command": "save", "args": { "async": true, "encoding": "Cyrillic (Windows 1251)" } },
+					{ "caption": "Kiril (Windows 866)", "command": "save", "args": { "async": true, "encoding": "Cyrillic (Windows 866)" } },
 					{ "caption": "DOS (CP 437)", "command": "save", "args": { "async": true, "encoding": "DOS (CP 437)" } },
-					{ "caption": "Estonian (ISO 8859-13)", "command": "save", "args": { "async": true, "encoding": "Estonian (ISO 8859-13)" } },
-					{ "caption": "Greek (ISO 8859-7)", "command": "save", "args": { "async": true, "encoding": "Greek (ISO 8859-7)" } },
-					{ "caption": "Greek (Windows 1253)", "command": "save", "args": { "async": true, "encoding": "Greek (Windows 1253)" } },
-					{ "caption": "Hebrew (CP 862)", "command": "save", "args": { "async": true, "encoding": "Hebrew (CP 862)" } },
-					{ "caption": "Hebrew (ISO 8859-8)", "command": "save", "args": { "async": true, "encoding": "Hebrew (ISO 8859-8)" } },
-					{ "caption": "Hebrew (Windows 1255)", "command": "save", "args": { "async": true, "encoding": "Hebrew (Windows 1255)" } },
-					{ "caption": "Nordic (ISO 8859-10)", "command": "save", "args": { "async": true, "encoding": "Nordic (ISO 8859-10)" } },
-					{ "caption": "Nordic (Windows 865)", "command": "save", "args": { "async": true, "encoding": "Nordic (Windows 865)" } },
-					{ "caption": "Romanian (ISO 8859-16)", "command": "save", "args": { "async": true, "encoding": "Romanian (ISO 8859-16)" } },
-					{ "caption": "Turkish (ISO 8859-9)", "command": "save", "args": { "async": true, "encoding": "Turkish (ISO 8859-9)" } },
-					{ "caption": "Turkish (Windows 1254)", "command": "save", "args": { "async": true, "encoding": "Turkish (Windows 1254)" } },
-					{ "caption": "Vietnamese (Windows 1258)", "command": "save", "args": { "async": true, "encoding": "Vietnamese (Windows 1258)" } },
-					{ "caption": "Western (ISO 8859-1)", "command": "save", "args": { "async": true, "encoding": "Western (ISO 8859-1)" } },
-					{ "caption": "Western (ISO 8859-15)", "command": "save", "args": { "async": true, "encoding": "Western (ISO 8859-15)" } },
-					{ "caption": "Western (ISO 8859-3)", "command": "save", "args": { "async": true, "encoding": "Western (ISO 8859-3)" } },
-					{ "caption": "Western (Mac Roman)", "command": "save", "args": { "async": true, "encoding": "Western (Mac Roman)" } },
-					{ "caption": "Western (Windows 1252)", "command": "save", "args": { "async": true, "encoding": "Western (Windows 1252)" } },
+					{ "caption": "Estonca (ISO 8859-13)", "command": "save", "args": { "async": true, "encoding": "Estonian (ISO 8859-13)" } },
+					{ "caption": "Yunanca (ISO 8859-7)", "command": "save", "args": { "async": true, "encoding": "Greek (ISO 8859-7)" } },
+					{ "caption": "Yunanca (Windows 1253)", "command": "save", "args": { "async": true, "encoding": "Greek (Windows 1253)" } },
+					{ "caption": "İbranice (CP 862)", "command": "save", "args": { "async": true, "encoding": "Hebrew (CP 862)" } },
+					{ "caption": "İbranice (ISO 8859-8)", "command": "save", "args": { "async": true, "encoding": "Hebrew (ISO 8859-8)" } },
+					{ "caption": "İbranice (Windows 1255)", "command": "save", "args": { "async": true, "encoding": "Hebrew (Windows 1255)" } },
+					{ "caption": "Nordik (ISO 8859-10)", "command": "save", "args": { "async": true, "encoding": "Nordic (ISO 8859-10)" } },
+					{ "caption": "Nordik (Windows 865)", "command": "save", "args": { "async": true, "encoding": "Nordic (Windows 865)" } },
+					{ "caption": "Rumen (ISO 8859-16)", "command": "save", "args": { "async": true, "encoding": "Romanian (ISO 8859-16)" } },
+					{ "caption": "Türkçe (ISO 8859-9)", "command": "save", "args": { "async": true, "encoding": "Turkish (ISO 8859-9)" } },
+					{ "caption": "Türkçe (Windows 1254)", "command": "save", "args": { "async": true, "encoding": "Turkish (Windows 1254)" } },
+					{ "caption": "Vietnamca (Windows 1258)", "command": "save", "args": { "async": true, "encoding": "Vietnamese (Windows 1258)" } },
+					{ "caption": "Batı Avrupa (ISO 8859-1)", "command": "save", "args": { "async": true, "encoding": "Western (ISO 8859-1)" } },
+					{ "caption": "Batı Avrupa (ISO 8859-15)", "command": "save", "args": { "async": true, "encoding": "Western (ISO 8859-15)" } },
+					{ "caption": "Batı Avrupa (ISO 8859-3)", "command": "save", "args": { "async": true, "encoding": "Western (ISO 8859-3)" } },
+					{ "caption": "Batı Avrupa (Mac Roman)", "command": "save", "args": { "async": true, "encoding": "Western (Mac Roman)" } },
+					{ "caption": "Batı Avrupa (Windows 1252)", "command": "save", "args": { "async": true, "encoding": "Western (Windows 1252)" } },
 					{ "caption": "-" },
-					{ "caption": "Hexadecimal", "command": "save", "args": { "async": true, "encoding": "Hexadecimal" } }
+					{ "caption": "Onaltılık", "command": "save", "args": { "async": true, "encoding": "Hexadecimal" } }
 				]
 			},
-			{ "command": "prompt_save_as", "caption": "Save As…", "mnemonic": "A" },
-			{ "command": "save_all", "caption": "Save All", "mnemonic": "l" },
-			{ "command": "html_print", "caption": "Print…", "mnemonic": "P" },
+			{ "command": "prompt_save_as", "caption": "Farklı Kaydet…", "mnemonic": "F" },
+			{ "command": "save_all", "caption": "Tümünü Kaydet", "mnemonic": "T" },
+			{ "command": "html_print", "caption": "Yazdır…", "mnemonic": "Y" },
 			{ "caption": "-", "id": "window" },
-			{ "command": "new_window", "caption": "New Window", "mnemonic": "W" },
-			{ "command": "close_window", "caption": "Close Window" },
+			{ "command": "new_window", "caption": "Yeni Pencere", "mnemonic": "Y" },
+			{ "command": "close_window", "caption": "Pencereyi Kapat" },
 			{ "caption": "-", "id": "close" },
-			{ "command": "close", "caption": "Close File", "mnemonic": "C" },
-			{ "command": "revert", "caption": "Revert File", "mnemonic": "v" },
-			{ "command": "close_all", "caption": "Close All Files" },
+			{ "command": "close", "caption": "Dosyayı Kapat", "mnemonic": "D" },
+			{ "command": "revert", "caption": "Dosyayı Geri Al", "mnemonic": "G" },
+			{ "command": "close_all", "caption": "Tüm Dosyaları Kapat" },
 			{ "caption": "-", "id": "exit" },
-			{ "command": "exit", "caption": "Exit", "mnemonic": "x", "platform": "Windows" },
-			{ "command": "exit", "caption": "Quit", "mnemonic": "Q", "platform": "Linux" }
+			{ "command": "exit", "caption": "Çıkış", "mnemonic": "Ç", "platform": "Windows" },
+			{ "command": "exit", "caption": "Kapat", "mnemonic": "K", "platform": "Linux" }
 		]
 	},
 	{
-		"caption": "Edit",
-		"mnemonic": "E",
+		"caption": "Düzenle",
+		"mnemonic": "D",
 		"id": "edit",
 		"children":
 		[
-			{ "command": "undo", "mnemonic": "U" },
-			{ "command": "redo_or_repeat", "mnemonic": "R" },
+			{ "command": "undo", "caption": "Geri Al", "mnemonic": "G" },
+			{ "command": "redo_or_repeat", "caption": "Yinele", "mnemonic": "Y" },
 			{
-				"caption": "Undo Selection",
+				"caption": "Seçimi Geri Al",
 				"children":
 				[
-					{ "command": "soft_undo" },
-					{ "command": "soft_redo" }
+					{ "command": "soft_undo", "caption": "Kademeli Geri Al" },
+					{ "command": "soft_redo", "caption": "Kademeli Yinele" }
 				]
 			},
 			{ "caption": "-", "id": "clipboard" },
-			{ "command": "cut", "mnemonic": "t" },
-			{ "command": "copy", "mnemonic": "C" },
-			{ "caption": "Copy as HTML", "command": "copy_as_html", "args": {"enclosing_tags": true, "font_size": false} },
-			{ "command": "paste", "mnemonic": "P" },
-			{ "command": "paste_and_indent", "mnemonic": "I" },
-			{ "command": "paste_from_history", "caption": "Paste from History" },
+			{ "command": "cut", "caption": "Kes", "mnemonic": "s" },
+			{ "command": "copy", "caption": "Kopyala", "mnemonic": "K" },
+			{ "caption": "HTML olarak Kopyala", "command": "copy_as_html", "args": {"enclosing_tags": true, "font_size": false} },
+			{ "command": "paste", "caption": "Yapıştır", "mnemonic": "Y" },
+			{ "command": "paste_and_indent", "caption": "Yapıştır ve Girinti Ekle", "mnemonic": "G" },
+			{ "command": "paste_from_history", "caption": "Geçmişten Yapıştır" },
 			{ "caption": "-" },
 			{
-				"caption": "Line", "mnemonic": "L",
+				"caption": "Satır", "mnemonic": "S",
 				"id": "line",
 				"children":
 				[
-					{ "command": "indent" },
-					{ "command": "unindent" },
-					{ "command": "reindent", "args": {"single_line": true} },
-					{ "command": "swap_line_up" },
-					{ "command": "swap_line_down" },
-					{ "command": "duplicate_line" },
-					{ "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"}, "caption": "Delete Line" },
-					{ "command": "join_lines" }
+					{ "command": "indent", "caption": "Girintile" },
+					{ "command": "unindent", "caption": "Girintiyi Kaldır" },
+					{ "command": "reindent", "caption": "Yeniden Girintile", "args": {"single_line": true} },
+					{ "command": "swap_line_up", "caption": "Satırı Yukarı Kaydır"  },
+					{ "command": "swap_line_down", "caption": "Satırı Aşağı Kaydır" },
+					{ "command": "duplicate_line", "caption": "Satırı Kopyala" },
+					{ "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"}, "caption": "Satırı Sil" },
+					{ "command": "join_lines", "caption": "Satırları Birleştir" }
 				]
 			},
 			{
-				"caption": "Comment", "mnemonic": "m",
+				"caption": "Yorum", "mnemonic": "Y",
 				"id": "comment",
 				"children":
 				[
-					{ "command": "toggle_comment", "args": {"block": false}, "caption": "Toggle Comment" },
-					{ "command": "toggle_comment", "args": {"block": true}, "caption": "Toggle Block Comment" }
+					{ "command": "toggle_comment", "args": {"block": false}, "caption": "Yorumu Aç/Kapat" },
+					{ "command": "toggle_comment", "args": {"block": true}, "caption": "Blok Yorumu Aç/Kapat" }
 				]
 			},
 			{
-				"caption": "Text", "mnemonic": "T",
+				"caption": "Metin", "mnemonic": "M",
 				"id": "text",
 				"children":
 				[
-					{ "command": "revert_hunk" },
-					{ "command": "revert_modification" },
-					{ "command": "toggle_inline_diff" },
+					{ "command": "revert_hunk", "caption": "Kısmı Geri Al" },
+					{ "command": "revert_modification", "caption": "Değişikliği Geri Al" },
+					{ "command": "toggle_inline_diff", "caption": "Satır İçi Farkı Aç/Kapat" },
 					{ "caption": "-" },
-					{ "command": "run_macro_file", "args": {"file": "res://Packages/Default/Add Line Before.sublime-macro"}, "caption": "Insert Line Before" },
-					{ "command": "run_macro_file", "args": {"file": "res://Packages/Default/Add Line.sublime-macro"}, "caption": "Insert Line After" },
+					{ "command": "run_macro_file", "args": {"file": "res://Packages/Default/Add Line Before.sublime-macro"}, "caption": "Üstüne Satır Ekle" },
+					{ "command": "run_macro_file", "args": {"file": "res://Packages/Default/Add Line.sublime-macro"},
+						"caption": "Altına Satır Ekle" },
 					{ "caption": "-" },
-					{ "command": "delete_word", "args": { "forward": true }, "caption": "Delete Word Forward" },
-					{ "command": "delete_word", "args": { "forward": false }, "caption": "Delete Word Backward" },
-					{ "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"}, "caption": "Delete Line" },
-					{ "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete to Hard EOL.sublime-macro"}, "caption": "Delete to End" },
-					{ "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete to Hard BOL.sublime-macro"}, "caption": "Delete to Beginning" },
+					{ "command": "delete_word", "args": { "forward": true }, "caption": "Sonraki Kelimeyi Sil" },
+					{ "command": "delete_word", "args": { "forward": false }, "caption": "Önceki Kelimeyi Sil" },
+					{ "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"}, "caption": "Satırı Sil" },
+					{ "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete to Hard EOL.sublime-macro"}, "caption": "Satır Sonuna Kadar Sil" },
+					{ "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete to Hard BOL.sublime-macro"}, "caption": "Satır Başına Kadar Sil" },
 					{ "caption": "-" },
-					{ "command": "transpose" }
+					{ "command": "transpose", "caption": "Yer Değiştir" }
 				]
 			},
 			{
-				"caption": "Tag",
+				"caption": "Etiket",
 				"id": "tag",
 				"children":
 				[
-					{ "command": "close_tag" },
-					{ "command": "expand_selection", "args": {"to": "tag"}, "caption": "Expand Selection to Tag" },
-					{ "command": "insert_snippet", "args": { "name": "Packages/XML/Snippets/xml-long-tag.sublime-snippet" }, "caption": "Wrap Selection With Tag" }
+					{ "command": "close_tag", "caption": "Etiketi Kapat" },
+					{ "command": "expand_selection", "args": {"to": "tag"}, "caption": "Seçimi Etikete Genişlet" },
+					{ "command": "insert_snippet", "args": { "name": "Packages/XML/Snippets/xml-long-tag.sublime-snippet" }, "caption": "Seçimi Etiketle Sar" }
 				]
 			},
 			{
-				"caption": "Mark",
+				"caption": "İşaretle",
 				"id": "mark",
 				"children":
 				[
-					{ "command": "set_mark" },
-					{ "command": "select_to_mark", "caption": "Select to Mark" },
-					{ "command": "delete_to_mark", "caption": "Delete to Mark" },
-					{ "command": "swap_with_mark", "caption": "Swap with Mark" },
-					{ "command": "clear_bookmarks", "args": {"name": "mark"}, "caption": "Clear Mark" },
+					{ "command": "set_mark", "caption": "Satırı İşaretle" },
+					{ "command": "select_to_mark", "caption": "Seçimi İşaretle" },
+					{ "command": "delete_to_mark", "caption": "İşaretlileri Sil" },
+					{ "command": "swap_with_mark", "caption": "İşaretlilerle Değiştir" },
+					{ "command": "clear_bookmarks", "args": {"name": "mark"}, "caption": "İşaretleri Temizle" },
 					{ "caption": "-" },
-					{ "command": "yank" }
+					{ "command": "yank", "caption": "Çek" }
 				]
 			},
 			{
-				"caption": "Code Folding",
+				"caption": "Kodu Katla",
 				"id": "fold",
 				"children":
 				[
-					{ "command": "fold" },
-					{ "command": "unfold" },
-					{ "command": "unfold_all", "caption": "Unfold All" },
+					{ "command": "fold", "caption": "Katla" },
+					{ "command": "unfold", "caption": "Aç" },
+					{ "command": "unfold_all", "caption": "Tümünü Aç" },
 					{ "caption": "-" },
-					{ "caption": "Fold All", "command": "fold_by_level", "mnemonic": "A", "args": {"level": 1} },
-					{ "caption": "Fold Level 2", "command": "fold_by_level", "mnemonic": "2", "args": {"level": 2} },
-					{ "caption": "Fold Level 3", "command": "fold_by_level", "mnemonic": "3", "args": {"level": 3} },
-					{ "caption": "Fold Level 4", "command": "fold_by_level", "mnemonic": "4", "args": {"level": 4} },
-					{ "caption": "Fold Level 5", "command": "fold_by_level", "mnemonic": "5", "args": {"level": 5} },
-					{ "caption": "Fold Level 6", "command": "fold_by_level", "mnemonic": "6", "args": {"level": 6} },
-					{ "caption": "Fold Level 7", "command": "fold_by_level", "mnemonic": "7", "args": {"level": 7} },
-					{ "caption": "Fold Level 8", "command": "fold_by_level", "mnemonic": "8", "args": {"level": 8} },
-					{ "caption": "Fold Level 9", "command": "fold_by_level", "mnemonic": "9", "args": {"level": 9} },
+					{ "caption": "Tümünü Katla", "command": "fold_by_level","mnemonic": "1", "args": {"level": 1} },
+					{ "caption": "Seviyesi: 2", "command": "fold_by_level","mnemonic": "2", "args": {"level": 2} },
+					{ "caption": "Seviyesi: 3", "command": "fold_by_level","mnemonic": "3", "args": {"level": 3} },
+					{ "caption": "Seviyesi: 4", "command": "fold_by_level","mnemonic": "4", "args": {"level": 4} },
+					{ "caption": "Seviyesi: 5", "command": "fold_by_level","mnemonic": "5", "args": {"level": 5} },
+					{ "caption": "Seviyesi: 6", "command": "fold_by_level","mnemonic": "6", "args": {"level": 6} },
+					{ "caption": "Seviyesi: 7", "command": "fold_by_level","mnemonic": "7", "args": {"level": 7} },
+					{ "caption": "Seviyesi: 8", "command": "fold_by_level","mnemonic": "8", "args": {"level": 8} },
+					{ "caption": "Seviyesi: 9", "command": "fold_by_level","mnemonic": "9", "args": {"level": 9} },
 					{ "caption": "-" },
-					{ "command": "fold_tag_attributes", "caption": "Fold Tag Attributes" }
+					{ "command": "fold_tag_attributes", "caption": "Etiket Özelliklerini Katla" }
 				]
 			},
 			{
-				"caption": "Convert Case", "mnemonic": "a",
+				"caption": "Harfi Değiştir", "mnemonic": "H",
 				"id": "convert_case",
 				"children":
 				[
-					{ "command": "title_case", "caption": "Title Case" },
-					{ "command": "upper_case", "caption": "Upper Case" },
-					{ "command": "lower_case", "caption": "Lower Case" },
-					{ "command": "swap_case", "caption": "Swap Case" },
+					{ "command": "title_case", "caption": "Başlık Harfi" },
+					{ "command": "upper_case", "caption": "Büyük Harf" },
+					{ "command": "lower_case", "caption": "Küçük Harf" },
+					{ "command": "swap_case", "caption": "Harfi Değiştir" },
 					{ "command": "convert_ident_case", "caption": "lowerCamelCase", "args": {"case": "title", "first_case": "lower"} },
 					{ "command": "convert_ident_case", "caption": "UpperCamelCase", "args": {"case": "title"} },
 					{ "command": "convert_ident_case", "caption": "snake_case", "args": {"separator": "_", "case": "lower"} },
@@ -289,167 +290,167 @@
 				]
 			},
 			{
-				"caption": "Wrap",
+				"caption": "Paragrafı Böl",
 				"id": "wrap",
 				"children":
 				[
-					{ "command": "wrap_lines", "caption": "Wrap Paragraph at Ruler" },
-					{ "command": "wrap_lines", "args": {"width": 70}, "caption": "Wrap paragraph at 70 characters" },
-					{ "command": "wrap_lines", "args": {"width": 72}, "caption": "Wrap paragraph at 72 characters" },
-					{ "command": "wrap_lines", "args": {"width": 78}, "caption": "Wrap paragraph at 78 characters" },
-					{ "command": "wrap_lines", "args": {"width": 80}, "caption": "Wrap paragraph at 80 characters" },
-					{ "command": "wrap_lines", "args": {"width": 100}, "caption": "Wrap paragraph at 100 characters" },
-					{ "command": "wrap_lines", "args": {"width": 120}, "caption": "Wrap paragraph at 120 characters" }
+					{ "command": "wrap_lines", "caption": "Paragrafı Cetvelde Böl" },
+					{ "command": "wrap_lines", "args": {"width": 70}, "caption": "Paragrafı 70. Karakterde Böl" },
+					{ "command": "wrap_lines", "args": {"width": 72}, "caption": "Paragrafı 72. Karakterde Böl" },
+					{ "command": "wrap_lines", "args": {"width": 78}, "caption": "Paragrafı 78. Karakterde Böl" },
+					{ "command": "wrap_lines", "args": {"width": 80}, "caption": "Paragrafı 80. Karakterde Böl" },
+					{ "command": "wrap_lines", "args": {"width": 100}, "caption": "Paragrafı 100. Karakterde Böl" },
+					{ "command": "wrap_lines", "args": {"width": 120}, "caption": "Paragrafı 120. Karakterde Böl" }
 				]
 			},
-			{ "command": "auto_complete", "caption": "Show Completions" },
+			{ "command": "auto_complete", "caption": "Tamamlamaları Göster" },
 			{ "caption": "-", "id": "permute" },
 
-			{ "command": "sort_lines", "args": {"case_sensitive": false}, "caption": "Sort Lines", "mnemonic": "S" },
-			{ "command": "sort_lines", "args": {"case_sensitive": true}, "caption": "Sort Lines (Case Sensitive)" },
+			{ "command": "sort_lines", "args": {"case_sensitive": false}, "caption": "Satırları Sırala", "mnemonic": "S" },
+			{ "command": "sort_lines", "args": {"case_sensitive": true}, "caption": "Satırları Sırala (Büyük/Küçük Harf Duyarlı)" },
 			{
-				"caption": "Permute Lines",
+				"caption": "Satırları Değiştir",
 				"children":
 				[
-					{ "command": "permute_lines", "args": {"operation": "reverse"}, "caption": "Reverse" },
-					{ "command": "permute_lines", "args": {"operation": "unique"}, "caption": "Unique" },
-					{ "command": "permute_lines", "args": {"operation": "shuffle"}, "caption": "Shuffle" }
+					{ "command": "permute_lines", "args": {"operation": "reverse"}, "caption": "Ters Çevir" },
+					{ "command": "permute_lines", "args": {"operation": "unique"}, "caption": "Benzersiz" },
+					{ "command": "permute_lines", "args": {"operation": "shuffle"}, "caption": "Karıştır" }
 				]
 			},
 			{
-				"caption": "Permute Selections",
+				"caption": "Seçimleri Değiştir",
 				"children":
 				[
-					{ "command": "sort_selection", "args": {"case_sensitive": false}, "caption": "Sort" },
-					{ "command": "sort_selection", "args": {"case_sensitive": true}, "caption": "Sort (Case Sensitive)" },
-					{ "command": "permute_selection", "args": {"operation": "reverse"}, "caption": "Reverse" },
-					{ "command": "permute_selection", "args": {"operation": "unique"}, "caption": "Unique" },
-					{ "command": "permute_selection", "args": {"operation": "shuffle"}, "caption": "Shuffle" }
+					{ "command": "sort_selection", "args": {"case_sensitive": false}, "caption": "Sırala" },
+					{ "command": "sort_selection", "args": {"case_sensitive": true}, "caption": "Sırala (Büyük/Küçük Harf Duyarlı)" },
+					{ "command": "permute_selection", "args": {"operation": "reverse"}, "caption": "Ters Çevir" },
+					{ "command": "permute_selection", "args": {"operation": "unique"}, "caption": "Benzersiz" },
+					{ "command": "permute_selection", "args": {"operation": "shuffle"}, "caption": "Karıştır" }
 				]
 			},
 			{ "caption": "-", "id": "end" }
 		]
 	},
 	{
-		"caption": "Selection",
+		"caption": "Seçim",
 		"mnemonic": "S",
 		"id": "selection",
 		"children":
 		[
-			{ "command": "split_selection_into_lines", "caption": "Split into Lines" },
-			{ "command": "single_selection" },
+			{ "command": "split_selection_into_lines", "caption": "Satırlara Böl" },
+			{ "command": "single_selection", "caption": "Tek Seçim" },
 			{ "caption": "-" },
-			{ "command": "select_all" },
-			{ "command": "expand_selection", "args": {"to": "smart"}, "caption": "Expand Selection" },
-			{ "command": "expand_selection", "args": {"to": "line"}, "caption": "Expand Selection to Line" },
-			{ "command": "expand_selection", "args": {"to": "line_prev"}, "caption": "Expand Selection to Line Upward" },
-			{ "command": "find_under_expand", "caption": "Expand Selection to Word" },
-			{ "command": "expand_selection_to_paragraph", "caption": "Expand Selection to Block" },
-			{ "command": "expand_selection_to_paragraph", "args": {"markup_aware": true}, "caption": "Expand Selection to Paragraph" },
-			{ "command": "expand_selection", "args": {"to": "scope"}, "caption": "Expand Selection to Scope" },
-			{ "command": "expand_selection", "args": {"to": "brackets"}, "caption": "Expand Selection to Brackets" },
-			{ "command": "expand_selection", "args": {"to": "indentation"}, "caption": "Expand Selection to Indentation" },
+			{ "command": "select_all", "caption": "Tümünü Seç" },
+			{ "command": "expand_selection", "args": {"to": "smart"}, "caption": "Seçimi Genişlet" },
+			{ "command": "expand_selection", "args": {"to": "line"}, "caption": "Satırı Seç" },
+			{ "command": "expand_selection", "args": {"to": "line_prev"}, "caption": "Üst Satırıda Seç" },
+			{ "command": "find_under_expand", "caption": "Kelimeyi Seç" },
+			{ "command": "expand_selection_to_paragraph", "caption": "Bloğu Seç" },
+			{ "command": "expand_selection_to_paragraph", "args": {"markup_aware": true}, "caption": "Paragrafı Seç" },
+			{ "command": "expand_selection", "args": {"to": "scope"}, "caption": "Kapsamı Seç" },
+			{ "command": "expand_selection", "args": {"to": "brackets"}, "caption": "Köşeli Parantez İçini Seç" },
+			{ "command": "expand_selection", "args": {"to": "indentation"}, "caption": "Girintinin Tümünü Seç" },
 			{ "caption": "-" },
-			{ "command": "select_lines", "args": {"forward": false}, "caption": "Add Previous Line" },
-			{ "command": "select_lines", "args": {"forward": true}, "caption": "Add Next Line" },
+			{ "command": "select_lines", "args": {"forward": false}, "caption": "Önceki Satırı Ekle" },
+			{ "command": "select_lines", "args": {"forward": true}, "caption": "Sonraki Satırı Ekle" },
 			{ "caption": "-" },
 			{
-				"caption": "Tab Selection",
+				"caption": "Sekme Seçimi",
 				"children":
 				[
-					{ "command": "unselect_others", "caption": "Unselect Others" },
-					{ "command": "unselect_to_left", "caption": "Unselect to Left" },
-					{ "command": "unselect_to_right", "caption": "Unselect to Right" },
+					{ "command": "unselect_others", "caption": "Diğerlerini Seçme" },
+					{ "command": "unselect_to_left", "caption": "Soldakileri Seçme" },
+					{ "command": "unselect_to_right", "caption": "Sağdakileri Seçme" },
 					{ "caption": "-" },
-					{ "command": "select_to_left", "caption": "Select to Left" },
-					{ "command": "select_to_right", "caption": "Select to Right" },
+					{ "command": "select_to_left", "caption": "Sola Seç" },
+					{ "command": "select_to_right", "caption": "Sağa Seç" },
 					{ "caption": "-" },
-					{ "command": "focus_to_left", "caption": "Focus to Left" },
-					{ "command": "focus_to_right", "caption": "Focus to Right" },
+					{ "command": "focus_to_left", "caption": "Sola Odaklan" },
+					{ "command": "focus_to_right", "caption": "Sağa Odaklan" },
 					{ "caption": "-" },
-					{ "command": "focus_by_index", "args": {"index": 0}, "caption": "Focus Selected Tab 1", "mnemonic": "1" },
-					{ "command": "focus_by_index", "args": {"index": 1}, "caption": "Focus Selected Tab 2", "mnemonic": "2" },
-					{ "command": "focus_by_index", "args": {"index": 2}, "caption": "Focus Selected Tab 3", "mnemonic": "3" },
-					{ "command": "focus_by_index", "args": {"index": 3}, "caption": "Focus Selected Tab 4", "mnemonic": "4" },
-					{ "command": "focus_by_index", "args": {"index": 4}, "caption": "Focus Selected Tab 5", "mnemonic": "5" },
-					{ "command": "focus_by_index", "args": {"index": 5}, "caption": "Focus Selected Tab 6", "mnemonic": "6" },
-					{ "command": "focus_by_index", "args": {"index": 6}, "caption": "Focus Selected Tab 7", "mnemonic": "7" },
-					{ "command": "focus_by_index", "args": {"index": 7}, "caption": "Focus Selected Tab 8", "mnemonic": "8" },
-					{ "command": "focus_by_index", "args": {"index": 8}, "caption": "Focus Selected Tab 9", "mnemonic": "9" },
-					{ "command": "focus_by_index", "args": {"index": 9}, "caption": "Focus Selected Tab 10" }
+					{ "command": "focus_by_index", "args": {"index": 0}, "caption": "Seçili Sekme: 1", "mnemonic": "1" },
+					{ "command": "focus_by_index", "args": {"index": 1}, "caption": "Seçili Sekme: 2", "mnemonic": "2" },
+					{ "command": "focus_by_index", "args": {"index": 2}, "caption": "Seçili Sekme: 3", "mnemonic": "3" },
+					{ "command": "focus_by_index", "args": {"index": 3}, "caption": "Seçili Sekme: 4", "mnemonic": "4" },
+					{ "command": "focus_by_index", "args": {"index": 4}, "caption": "Seçili Sekme: 5", "mnemonic": "5" },
+					{ "command": "focus_by_index", "args": {"index": 5}, "caption": "Seçili Sekme: 6", "mnemonic": "6" },
+					{ "command": "focus_by_index", "args": {"index": 6}, "caption": "Seçili Sekme: 7", "mnemonic": "7" },
+					{ "command": "focus_by_index", "args": {"index": 7}, "caption": "Seçili Sekme: 8", "mnemonic": "8" },
+					{ "command": "focus_by_index", "args": {"index": 8}, "caption": "Seçili Sekme: 9", "mnemonic": "9" },
+					{ "command": "focus_by_index", "args": {"index": 9}, "caption": "Seçili Sekme: 10" }
 				]
 			}
 		]
 	},
 	{
-		"caption": "Find",
-		"mnemonic": "i",
+		"caption": "Bul",
+		"mnemonic": "B",
 		"id": "find",
 		"children":
 		[
-			{ "command": "show_panel", "args": {"panel": "find", "reverse": false}, "caption": "Find…" },
-			{ "command": "find_next" },
-			{ "command": "find_prev", "caption": "Find Previous" },
-			{ "command": "show_panel", "args": {"panel": "incremental_find", "reverse": false}, "caption": "Incremental Find" },
+			{ "command": "show_panel", "args": {"panel": "find", "reverse": false}, "caption": "Bul…" },
+			{ "command": "find_next", "caption": "Sonrakini Bul" },
+			{ "command": "find_prev", "caption": "Öncekini Bul" },
+			{ "command": "show_panel", "args": {"panel": "incremental_find", "reverse": false}, "caption": "Tek Bul" },
 			{ "caption": "-" },
-			{ "command": "show_panel", "args": {"panel": "replace", "reverse": false}, "caption": "Replace…" },
-			{ "command": "replace_next" },
+			{ "command": "show_panel", "args": {"panel": "replace", "reverse": false}, "caption": "Değiştir…" },
+			{ "command": "replace_next", "caption": "Sonrakini Değiştir" },
 			{ "caption": "-" },
-			{ "command": "find_under", "caption": "Quick Find" },
-			{ "command": "find_all_under", "caption": "Quick Find All" },
-			{ "command": "find_under_expand", "caption": "Quick Add Next" },
-			{ "command": "find_under_expand_skip", "caption": "Quick Skip Next", "platform": "!OSX" },
+			{ "command": "find_under", "caption": "Hızlı Bul" },
+			{ "command": "find_all_under", "caption": "Hızlı Bul (Tümü)" },
+			{ "command": "find_under_expand", "caption": "Sonraki Hızlı Ekleyi Bul" },
+			{ "command": "find_under_expand_skip", "caption": "Sonraki Hızlı Bul (Atla)", "platform": "!OSX" },
 			{ "caption": "-" },
-			{ "command": "slurp_find_string", "caption": "Use Selection for Find" },
-			{ "command": "slurp_replace_string", "caption": "Use Selection for Replace" },
+			{ "command": "slurp_find_string", "caption": "Seçimi Bulmak İçin Kullan" },
+			{ "command": "slurp_replace_string", "caption": "Seçimi Değiştirmek İçin Kullan" },
 			{ "caption": "-" },
-			{ "command": "show_panel", "args": {"panel": "find_in_files"}, "caption": "Find in Files…" },
+			{ "command": "show_panel", "args": {"panel": "find_in_files"}, "caption": "Dosyalarda Bul…" },
 			{
-				"caption": "Find Results",
+				"caption": "Arama Sonuçları",
 				"mnemonic": "R",
 				"children":
 				[
-					{ "command": "show_panel", "args": {"panel": "output.find_results", "panel_name" : "Results Panel", "toggle" : true, "toggle_when_not_focused": true} },
-					{ "command": "next_result" },
-					{ "command": "prev_result", "caption": "Previous Result" }
+					{ "command": "show_panel", "caption": "Sonuçlar Panelini Göster", "args": {"panel": "output.find_results", "panel_name" : "Sonuçlar Paneli", "toggle" : true, "toggle_when_not_focused": true} },
+					{ "command": "next_result", "caption": "Sonraki Sonuç" },
+					{ "command": "prev_result", "caption": "Önceki Sonuç" }
 				]
 			},
-			{ "command": "cancel_find", "caption": "Cancel Find in Files" }
+			{ "command": "cancel_find", "caption": "Dosyalarda Bulmayı İptal Et" }
 		]
 	},
 	{
-		"caption": "View",
-		"mnemonic": "V",
+		"caption": "Görünüm",
+		"mnemonic": "G",
 		"id": "view",
 		"children":
 		[
 			{
-				"caption": "Side Bar",
+				"caption": "Yan Çubuk",
 				"id": "side_bar",
 				"children":
 				[
-					{ "command": "toggle_side_bar" },
+					{ "command": "toggle_side_bar", "caption": "Kenar Çubuğu Göster/Gizle" },
 					{ "caption": "-" },
-					{ "command": "toggle_show_open_files" }
+					{ "command": "toggle_show_open_files", "caption": "Açık Dosyaları Göster/Gizle" }
 				]
 			},
-			{ "command": "toggle_minimap" },
-			{ "command": "toggle_tabs" },
-			{ "command": "toggle_status_bar" },
-			{ "command": "toggle_menu" },
-			{ "command": "show_panel", "args": {"panel": "console", "toggle": true} },
+			{ "command": "toggle_minimap", "caption": "Minimap'i Göster/Gizle" },
+			{ "command": "toggle_tabs", "caption": "Sekmeleri Göster/Gizle" },
+			{ "command": "toggle_status_bar", "caption": "Durum Çubuğunu Göster/Gizle" },
+			{ "command": "toggle_menu", "caption": "Menüyü Göster/Gizle" },
+			{ "command": "show_panel", "caption": "Konsolu Göster/Gizle", "args": {"panel": "console", "toggle": true} },
 			{ "caption": "-", "id": "full_screen" },
-			{ "command": "toggle_full_screen" },
-			{ "command": "toggle_distraction_free" },
+			{ "command": "toggle_full_screen", "caption": "Tam Ekranı Göster/Gizle" },
+			{ "command": "toggle_distraction_free", "caption": "Dikkat Dağılmasını Önleyici Modu Göster/Gizle" },
 			{ "caption": "-", "id": "groups" },
 			{
-				"caption": "Layout",
-				"mnemonic": "L",
+				"caption": "Düzen",
+				"mnemonic": "D",
 				"id": "layout",
 				"children":
 				[
 					{
-						"caption": "Single",
+						"caption": "Tek",
 						"command": "set_layout",
 						"args":
 						{
@@ -459,7 +460,7 @@
 						}
 					},
 					{
-						"caption": "Columns: 2",
+						"caption": "2 Sütun",
 						"command": "set_layout",
 						"args":
 						{
@@ -469,7 +470,7 @@
 						}
 					},
 					{
-						"caption": "Columns: 3",
+						"caption": "3 Sütun",
 						"command": "set_layout",
 						"args":
 						{
@@ -479,7 +480,7 @@
 						}
 					},
 					{
-						"caption": "Columns: 4",
+						"caption": "4 Sütun",
 						"command": "set_layout",
 						"args":
 						{
@@ -489,7 +490,7 @@
 						}
 					},
 					{
-						"caption": "Rows: 2",
+						"caption": "2 Satır",
 						"command": "set_layout",
 						"args":
 						{
@@ -499,7 +500,7 @@
 						}
 					},
 					{
-						"caption": "Rows: 3",
+						"caption": "3 Satır",
 						"command": "set_layout",
 						"args":
 						{
@@ -509,7 +510,7 @@
 						}
 					},
 					{
-						"caption": "Grid: 4",
+						"caption": "4 Izgara",
 						"command": "set_layout",
 						"args":
 						{
@@ -525,45 +526,45 @@
 				]
 			},
 			{
-				"caption": "Groups",
+				"caption": "Gruplar",
 				"children":
 				[
-					{ "command": "new_pane", "caption": "Move File to New Group" },
-					{ "command": "new_pane", "args": {"move": false}, "caption": "New Group" },
-					{ "command": "close_pane", "caption": "Close Group" },
+					{ "command": "new_pane", "caption": "Dosyayı Yeni Gruba Taşı" },
+					{ "command": "new_pane", "args": {"move": false}, "caption": "Yeni Grup" },
+					{ "command": "close_pane", "caption": "Grubu Kapat" },
 
 					{ "caption": "-" },
 
 					{
-						"caption": "Max Columns: 1",
+						"caption": "Maksimum 1 Sütun",
 						"command": "set_max_columns",
 						"checkbox": true,
 						"args": { "columns": 1 },
 						"mnemonic": "1"
 					},
 					{
-						"caption": "Max Columns: 2",
+						"caption": "Maksimum 2 Sütun",
 						"command": "set_max_columns",
 						"checkbox": true,
 						"args": { "columns": 2 },
 						"mnemonic": "2"
 					},
 					{
-						"caption": "Max Columns: 3",
+						"caption": "Maksimum 3 Sütun",
 						"command": "set_max_columns",
 						"checkbox": true,
 						"args": { "columns": 3 },
 						"mnemonic": "3"
 					},
 					{
-						"caption": "Max Columns: 4",
+						"caption": "Maksimum 4 Sütun",
 						"command": "set_max_columns",
 						"checkbox": true,
 						"args": { "columns": 4 },
 						"mnemonic": "4"
 					},
 					{
-						"caption": "Max Columns: 5",
+						"caption": "Maksimum 5 Sütun",
 						"command": "set_max_columns",
 						"checkbox": true,
 						"args": { "columns": 5 },
@@ -572,67 +573,66 @@
 				]
 			},
 			{
-				"caption": "Focus Group",
-				"mnemonic": "F",
+				"caption": "Gruplara Odaklan",
+				"mnemonic": "G",
 				"children":
 				[
-
-					{ "command": "focus_neighboring_group", "caption": "Next" },
-					{ "command": "focus_neighboring_group", "args": {"forward": false}, "caption": "Previous" },
+					{ "command": "focus_neighboring_group", "caption": "Sonraki" },
+					{ "command": "focus_neighboring_group", "args": {"forward": false}, "caption": "Önceki" },
 					{ "caption": "-" },
-					{ "command": "focus_group", "args": {"group": 0}, "caption": "Group 1", "mnemonic": "1" },
-					{ "command": "focus_group", "args": {"group": 1}, "caption": "Group 2", "mnemonic": "2" },
-					{ "command": "focus_group", "args": {"group": 2}, "caption": "Group 3", "mnemonic": "3" },
-					{ "command": "focus_group", "args": {"group": 3}, "caption": "Group 4", "mnemonic": "4" }
+					{ "command": "focus_group", "args": {"group": 0}, "caption": "Grup 1", "mnemonic": "1" },
+					{ "command": "focus_group", "args": {"group": 1}, "caption": "Grup 2", "mnemonic": "2" },
+					{ "command": "focus_group", "args": {"group": 2}, "caption": "Grup 3", "mnemonic": "3" },
+					{ "command": "focus_group", "args": {"group": 3}, "caption": "Grup 4", "mnemonic": "4" }
 				]
 			},
 			{
-				"caption": "Move File to Group",
+				"caption": "Dosyayı Gruba Taşı",
 				"mnemonic": "M",
 				"children":
 				[
-					{ "command": "move_to_neighboring_group", "caption": "Next" },
-					{ "command": "move_to_neighboring_group", "args": {"forward": false}, "caption": "Previous" },
+					{ "command": "move_to_neighboring_group", "caption": "Sonraki" },
+					{ "command": "move_to_neighboring_group", "args": {"forward": false}, "caption": "Önceki" },
 					{ "caption": "-" },
-					{ "command": "move_to_group", "args": {"group": 0}, "caption": "Group 1", "mnemonic": "1" },
-					{ "command": "move_to_group", "args": {"group": 1}, "caption": "Group 2", "mnemonic": "2" },
-					{ "command": "move_to_group", "args": {"group": 2}, "caption": "Group 3", "mnemonic": "3" },
-					{ "command": "move_to_group", "args": {"group": 3}, "caption": "Group 4", "mnemonic": "4" }
+					{ "command": "move_to_group", "args": {"group": 0}, "caption": "Grup 1", "mnemonic": "1" },
+					{ "command": "move_to_group", "args": {"group": 1}, "caption": "Grup 2", "mnemonic": "2" },
+					{ "command": "move_to_group", "args": {"group": 2}, "caption": "Grup 3", "mnemonic": "3" },
+					{ "command": "move_to_group", "args": {"group": 3}, "caption": "Grup 4", "mnemonic": "4" }
 				]
 			},
 			{ "caption": "-" },
 			{
-				"caption": "Syntax",
+				"caption": "Sözdizimi",
 				"mnemonic": "S",
 				"id": "syntax",
 				"children": [ { "command": "$file_types" } ]
 			},
 			{
-				"caption": "Indentation",
-				"mnemonic": "I",
+				"caption": "Girinti",
+				"mnemonic": "G",
 				"id": "indentation",
 				"children":
 				[
-					{ "command": "toggle_setting", "args": {"setting": "translate_tabs_to_spaces"}, "caption": "Indent Using Spaces", "checkbox": true },
+					{ "command": "toggle_setting", "args": {"setting": "translate_tabs_to_spaces"}, "caption": "Girintiyi Boşluklara Dönüştür", "checkbox": true },
 					{ "caption": "-" },
-					{ "command": "set_setting", "args": {"setting": "tab_size", "value": 1}, "caption": "Tab Width: 1", "mnemonic": "1", "checkbox": true },
-					{ "command": "set_setting", "args": {"setting": "tab_size", "value": 2}, "caption": "Tab Width: 2", "mnemonic": "2", "checkbox": true },
-					{ "command": "set_setting", "args": {"setting": "tab_size", "value": 3}, "caption": "Tab Width: 3", "mnemonic": "3", "checkbox": true },
-					{ "command": "set_setting", "args": {"setting": "tab_size", "value": 4}, "caption": "Tab Width: 4", "mnemonic": "4", "checkbox": true },
-					{ "command": "set_setting", "args": {"setting": "tab_size", "value": 5}, "caption": "Tab Width: 5", "mnemonic": "5", "checkbox": true },
-					{ "command": "set_setting", "args": {"setting": "tab_size", "value": 6}, "caption": "Tab Width: 6", "mnemonic": "6", "checkbox": true },
-					{ "command": "set_setting", "args": {"setting": "tab_size", "value": 7}, "caption": "Tab Width: 7", "mnemonic": "7", "checkbox": true },
-					{ "command": "set_setting", "args": {"setting": "tab_size", "value": 8}, "caption": "Tab Width: 8", "mnemonic": "8", "checkbox": true },
+					{ "command": "set_setting", "args": {"setting": "tab_size", "value": 1}, "caption": "Sekme Genişliği: 1", "mnemonic": "1", "checkbox": true },
+					{ "command": "set_setting", "args": {"setting": "tab_size", "value": 2}, "caption": "Sekme Genişliği: 2", "mnemonic": "2", "checkbox": true },
+					{ "command": "set_setting", "args": {"setting": "tab_size", "value": 3}, "caption": "Sekme Genişliği: 3", "mnemonic": "3", "checkbox": true },
+					{ "command": "set_setting", "args": {"setting": "tab_size", "value": 4}, "caption": "Sekme Genişliği: 4", "mnemonic": "4", "checkbox": true },
+					{ "command": "set_setting", "args": {"setting": "tab_size", "value": 5}, "caption": "Sekme Genişliği: 5", "mnemonic": "5", "checkbox": true },
+					{ "command": "set_setting", "args": {"setting": "tab_size", "value": 6}, "caption": "Sekme Genişliği: 6", "mnemonic": "6", "checkbox": true },
+					{ "command": "set_setting", "args": {"setting": "tab_size", "value": 7}, "caption": "Sekme Genişliği: 7", "mnemonic": "7", "checkbox": true },
+					{ "command": "set_setting", "args": {"setting": "tab_size", "value": 8}, "caption": "Sekme Genişliği: 8", "mnemonic": "8", "checkbox": true },
 					{ "caption": "-" },
-					{ "command": "detect_indentation", "caption": "Guess Settings From Buffer" },
+					{ "command": "detect_indentation", "caption": "Girinti Ayarlarını Algıla" },
 					{ "caption": "-" },
-					{ "command": "expand_tabs", "caption": "Convert Indentation to Spaces", "args": {"set_translate_tabs": true} },
-					{ "command": "unexpand_tabs", "caption": "Convert Indentation to Tabs", "args": {"set_translate_tabs": true} }
+					{ "command": "expand_tabs", "caption": "Girintiyi Boşluklara Dönüştür", "args": {"set_translate_tabs": true} },
+					{ "command": "unexpand_tabs", "caption": "Girintiyi Sekmelere Dönüştür", "args": {"set_translate_tabs": true} }
 				]
 			},
 			{
-				"caption": "Line Endings",
-				"mnemonic": "n",
+				"caption": "Satır Sonları",
+				"mnemonic": "S",
 				"id": "line_endings",
 				"children":
 				[
@@ -641,13 +641,13 @@
 					{ "command": "set_line_ending", "args": {"type": "cr"}, "caption": "Mac OS 9", "checkbox": true }
 				]
 			},
-			{ "caption": "-", "id": "settings" },
-			{ "command": "toggle_setting", "args": {"setting": "word_wrap"}, "caption": "Word Wrap", "mnemonic": "W", "checkbox": true },
+			{ "caption": "-", "id": "Ayarlar" },
+			{ "command": "toggle_setting", "args": {"setting": "word_wrap"}, "caption": "Sözcük Kaydırmayı Aç/Kapat", "mnemonic": "S", "checkbox": true },
 			{
-				"caption": "Word Wrap Column",
+				"caption": "Sözcük Kaydırma Sütunları",
 				"children":
 				[
-					{ "command": "set_setting", "args": {"setting": "wrap_width", "value": 0}, "caption": "Automatic", "checkbox": true },
+					{ "command": "set_setting", "args": {"setting": "wrap_width", "value": 0}, "caption": "Otomatik", "checkbox": true },
 					{ "caption": "-" },
 					{ "command": "set_setting", "args": {"setting": "wrap_width", "value": 70}, "caption": "70", "checkbox": true },
 					{ "command": "set_setting", "args": {"setting": "wrap_width", "value": 72}, "caption": "72", "checkbox": true },
@@ -658,10 +658,10 @@
 				]
 			},
 			{
-				"caption": "Ruler",
+				"caption": "Cetveller",
 				"children":
 				[
-					{ "command": "set_setting", "args": {"setting": "rulers", "value": []}, "caption": "None", "checkbox": true },
+					{ "command": "set_setting", "args": {"setting": "rulers", "value": []}, "caption": "Yok", "checkbox": true },
 					{ "caption": "-" },
 					{ "command": "set_setting", "args": {"setting": "rulers", "value": [70]}, "caption": "70", "checkbox": true },
 					{ "command": "set_setting", "args": {"setting": "rulers", "value": [72]}, "caption": "72", "checkbox": true },
@@ -672,48 +672,49 @@
 				]
 			},
 			{ "caption": "-" },
-			{ "command": "toggle_setting", "args": {"setting": "spell_check"}, "caption": "Spell Check", "checkbox": true },
-			{ "command": "next_misspelling" },
-			{ "command": "prev_misspelling" },
+			{ "command": "toggle_setting", "args": {"setting": "spell_check"}, "caption": "Yazım Denetimi", "checkbox": true },
+			{ "command": "next_misspelling", "caption": "Sonraki Yazım Hatası" },
+			{ "command": "prev_misspelling", "caption": "Önceki Yazım Hatası" },
 			{
-				"caption": "Dictionary",
+				"caption": "Diller Sözlüğü",
 				"children": [ { "command": "$dictionaries" } ]
 			}
 		]
 	},
 	{
-		"caption": "Goto",
+		"caption": "Git",
 		"mnemonic": "G",
 		"id": "goto",
 		"children":
 		[
-			{ "command": "show_overlay", "args": {"overlay": "goto", "show_files": true}, "caption": "Goto Anything…", "mnemonic": "A" },
+			{ "command": "show_overlay", "args": {"overlay": "goto", "show_files": true}, "caption": "Git Her Şeye…", "mnemonic": "G" },
 			{ "caption": "-" },
-			{ "command": "show_overlay", "args": {"overlay": "goto", "text": "@"}, "caption": "Goto Symbol…" },
-			{ "command": "goto_symbol_in_project", "caption": "Goto Symbol in Project…" },
-			{ "command": "goto_definition", "caption": "Goto Definition…" },
-			{ "command": "goto_reference", "caption": "Goto Reference…" },
-			{ "command": "show_overlay", "args": {"overlay": "goto", "text": ":"}, "caption": "Goto Line…" },
+			{ "command": "show_overlay", "args": {"overlay": "goto", "text": "@"}, "caption": "Git Sembol… (@)" },
+			{ "command": "goto_symbol_in_project", "caption": "Projede Sembole Git…" },
+			{ "command": "goto_definition", "caption": "Tanıma Git…" },
+			{ "command": "goto_reference", "caption": "Referansa Git…" },
+			{ "command": "show_overlay", "args": {"overlay": "goto", "text": "#"}, "caption": "Kelimeye Git…" },
+			{ "command": "show_overlay", "args": {"overlay": "goto", "text": ":"}, "caption": "Satıra Git…" },
 			{ "caption": "-" },
-			{ "command": "next_modification", "caption": "Next Modification" },
-			{ "command": "prev_modification", "caption": "Previous Modification" },
+			{ "command": "next_modification", "caption": "Sonraki Değişiklik" },
+			{ "command": "prev_modification", "caption": "Önceki Değişiklik" },
 			{ "caption": "-" },
-			{ "command": "jump_back", "caption": "Jump Back" },
-			{ "command": "jump_forward", "caption": "Jump Forward" },
+			{ "command": "jump_back", "caption": "Geri Git" },
+			{ "command": "jump_forward", "caption": "İleri Git" },
 			{ "caption": "-" },
 			{
-				"caption": "Switch File",
-				"mnemonic": "t",
+				"caption": "Dosya Değiştir",
+				"mnemonic": "D",
 				"id": "switch_file",
 				"children":
 				[
-					{ "command": "next_view", "caption": "Next File" },
-					{ "command": "prev_view", "caption": "Previous File" },
+					{ "command": "next_view", "caption": "Sonraki Dosya" },
+					{ "command": "prev_view", "caption": "Önceki Dosya" },
 					{ "caption": "-" },
-					{ "command": "next_view_in_stack", "caption": "Next File in Stack" },
-					{ "command": "prev_view_in_stack", "caption": "Previous File in Stack" },
+					{ "command": "next_view_in_stack", "caption": "Yığındaki Sonraki Dosya" },
+					{ "command": "prev_view_in_stack", "caption": "Yığındaki Önceki Dosya" },
 					{ "caption": "-" },
-					{ "command": "switch_file", "args": {"extensions": ["cpp", "cxx", "cc", "c", "hpp", "hxx", "hh", "h", "ipp", "inl", "m", "mm"]}, "caption": "Switch Header/Implementation", "mnemonic": "H" },
+					{ "command": "switch_file", "args": {"extensions": ["cpp", "cxx", "cc", "c", "hpp", "hxx", "hh", "h", "ipp", "inl", "m", "mm"]}, "caption": "Başlık/İmplementasyonu Değiştir", "mnemonic": "B" },
 					{ "caption": "-" },
 					{ "command": "select_by_index", "args": { "index": 0 } },
 					{ "command": "select_by_index", "args": { "index": 1 } },
@@ -729,27 +730,27 @@
 			},
 			{ "caption": "-" },
 			{
-				"caption": "Scroll",
-				"mnemonic": "S",
+				"caption": "Kaydırma",
+				"mnemonic": "K",
 				"id": "scroll",
 				"children":
 				[
-					{ "command": "show_at_center", "caption": "Scroll to Selection" },
-					{ "command": "scroll_lines", "args": {"amount": 1.0 }, "caption": "Line Up" },
-					{ "command": "scroll_lines", "args": {"amount": -1.0 }, "caption": "Line Down" }
+					{ "command": "show_at_center", "caption": "Seçime Git" },
+					{ "command": "scroll_lines", "args": {"amount": 1.0 }, "caption": "Satırı Yukarı Kaydır" },
+					{ "command": "scroll_lines", "args": {"amount": -1.0 }, "caption": "Satırı Aşağı Kaydır" }
 				]
 			},
 			{
-				"caption": "Bookmarks",
-				"mnemonic": "B",
+				"caption": "Yer İşaretleri",
+				"mnemonic": "Y",
 				"id": "bookmarks",
 				"children":
 				[
-					{ "command": "toggle_bookmark", "args": {"toggle_line": true } },
-					{ "command": "next_bookmark" },
-					{ "command": "prev_bookmark" },
-					{ "command": "clear_bookmarks" },
-					{ "command": "select_all_bookmarks" },
+					{ "command": "toggle_bookmark", "caption": "Yer İşaretini Aç/Kapat", "args": {"toggle_line": true } },
+					{ "command": "next_bookmark", "caption": "Sonraki Yer İşareti" },
+					{ "command": "prev_bookmark", "caption": "Önceki Yer İşareti" },
+					{ "command": "clear_bookmarks", "caption": "Yer İşaretlerini Temizle" },
+					{ "command": "select_all_bookmarks", "caption": "Tüm Yer İşaretlerini Seç" },
 					{ "caption": "-" },
 					{ "command": "select_bookmark", "args": {"index": 0} },
 					{ "command": "select_bookmark", "args": {"index": 1} },
@@ -770,24 +771,24 @@
 				]
 			},
 			{ "caption": "-" },
-			{ "command": "move_to", "args": {"to": "brackets"}, "caption": "Jump to Matching Bracket" }
+			{ "command": "move_to", "args": {"to": "brackets"}, "caption": "Eşleşen Köşeli Paranteze Git" }
 		]
 	},
 	{
-		"caption": "Tools",
-		"mnemonic": "T",
+		"caption": "Araçlar",
+		"mnemonic": "A",
 		"id": "tools",
 		"children":
 		[
-			{ "command": "show_overlay", "args": {"overlay": "command_palette"}, "caption": "Command Palette…" },
-			{ "command": "show_overlay", "args": {"overlay": "command_palette", "text": "Snippet: "}, "caption": "Snippets…" },
+			{ "command": "show_overlay", "args": {"overlay": "command_palette"}, "caption": "Komut Paleti…" },
+			{ "command": "show_overlay", "args": {"overlay": "command_palette", "text": "Snippet: "}, "caption": "Snippet'ler…" },
 			{ "caption": "-", "id": "build" },
 			{
-				"caption": "Build System",
-				"mnemonic": "u",
+				"caption": "Yapı Sistemi",
+				"mnemonic": "Y",
 				"children":
 				[
-					{ "command": "set_build_system", "args": { "file": "" }, "caption": "Automatic", "checkbox": true },
+					{ "command": "set_build_system", "args": { "file": "" }, "caption": "Otomatik", "checkbox": true },
 					{ "caption": "-" },
 					{ "command": "set_build_system", "args": {"index": 0}, "checkbox": true },
 					{ "command": "set_build_system", "args": {"index": 1}, "checkbox": true },
@@ -804,63 +805,63 @@
 					{ "caption": "-" },
 					{ "command": "$build_systems" },
 					{ "caption": "-" },
-					{ "command": "new_build_system", "caption": "New Build System…" }
+					{ "command": "new_build_system", "caption": "Yeni Yapı Sistemi…" }
 				]
 			},
-			{ "command": "build", "mnemonic": "B" },
-			{ "command": "build", "args": {"select": true}, "caption": "Build With…" },
-			{ "command": "cancel_build", "caption": "Cancel Build", "mnemonic": "C" },
+			{ "command": "build", "caption": "Yapı", "mnemonic": "Y" },
+			{ "command": "build", "args": {"select": true}, "caption": "Şununla Yapı…" },
+			{ "command": "cancel_build", "caption": "Yapıyı İptal Et", "mnemonic": "Y" },
 			{
-				"caption": "Build Results",
-				"mnemonic": "R",
+				"caption": "Yapı Sonuçları",
+				"mnemonic": "Y",
 				"children":
 				[
-					{ "command": "show_panel", "args": {"panel": "output.exec"}, "caption": "Show Build Results", "mnemonic": "S" },
-					{ "command": "next_result", "mnemonic": "N" },
-					{ "command": "prev_result", "caption": "Previous Result", "mnemonic": "P" }
+					{ "command": "show_panel", "args": {"panel": "output.exec"}, "caption": "Yapı Sonuçlarını Göster", "mnemonic": "G" },
+					{ "command": "next_result", "caption": "Sonraki Sonuç", "mnemonic": "S" },
+					{ "command": "prev_result", "caption": "Önceki Sonuç", "mnemonic": "Ö" }
 				]
 			},
-			{ "command": "toggle_save_all_on_build", "caption": "Save All on Build", "mnemonic": "A", "checkbox": true },
-			{ "caption": "-", "id": "macros" },
-			{ "command": "toggle_record_macro", "mnemonic": "M" },
-			{ "command": "run_macro", "caption": "Playback Macro", "mnemonic": "P" },
-			{ "command": "save_macro", "caption": "Save Macro…", "mnemonic": "v" },
+			{ "command": "toggle_save_all_on_build", "caption": "Yapıda Tümünü Kaydet", "mnemonic": "Y", "checkbox": true },
+			{ "caption": "-", "id": "makrolar" },
+			{ "command": "toggle_record_macro", "caption": "Makro Kaydet", "mnemonic": "K" },
+			{ "command": "run_macro", "caption": "Makroyu Çalıştır", "mnemonic": "M" },
+			{ "command": "save_macro", "caption": "Makroya Kaydet…", "mnemonic": "K" },
 			{
-				"caption": "Macros",
+				"caption": "Makrolar",
 				"children": [ { "command": "$macros" } ]
 			},
 			{ "caption": "-" },
 			{
-				"caption": "Developer",
+				"caption": "Geliştirici",
 				"children":
 				[
-					{ "command": "new_plugin", "caption": "New Plugin…" },
-					{ "command": "new_snippet", "caption": "New Snippet…" },
-					{ "command": "new_syntax", "caption": "New Syntax…" },
-					{ "command": "convert_syntax" },
+					{ "command": "new_plugin", "caption": "Yeni Paket…" },
+					{ "command": "new_snippet", "caption": "Yeni Snippet…" },
+					{ "command": "new_syntax", "caption": "Yeni Sözdizimi…" },
+					{ "command": "convert_syntax", "caption": "Sözdizimini Dönüştür…" },
 					{ "caption": "-" },
 					{ "caption": "-" },
-					{ "command": "profile_plugins" },
+					{ "command": "profile_plugins", "caption": "Paket Profili" },
 					{ "caption": "-" },
-					{ "command": "view_resource", "caption": "View Package File…" },
-					{ "command": "show_scope_name" }
+					{ "command": "view_resource", "caption": "Paket Dosyalarını Gör…" },
+					{ "command": "show_scope_name", "caption": "Kapsam Adını Göster" }
 				]
 			},
-			{ "command": "install_package_control", "caption": "Install Package Control…" },
+			{ "command": "install_package_control", "caption": "Paket Kontrolünü Yükle…" },
 			{ "caption": "-", "id": "end" }
 		]
 	},
 	{
-		"caption": "Project",
+		"caption": "Proje",
 		"id": "project",
 		"mnemonic": "P",
 		"children":
 		[
-			{ "command": "prompt_open_project_or_workspace", "caption": "Open Project…" },
-			{ "command": "prompt_switch_project_or_workspace", "caption": "Switch Project…" },
-			{ "command": "prompt_select_workspace", "caption": "Quick Switch Project…", "mnemonic": "S" },
+			{ "command": "prompt_open_project_or_workspace", "caption": "Proje Aç…" },
+			{ "command": "prompt_switch_project_or_workspace", "caption": "Proje Değiştir…" },
+			{ "command": "prompt_select_workspace", "caption": "Hızlı Proje Değiştir…", "mnemonic": "H" },
 			{
-				"caption": "Open Recent",
+				"caption": "Son Açılanlar",
 				"children":
 				[
 					{ "command": "open_recent_project_or_workspace", "args": {"index": 0 } },
@@ -872,118 +873,117 @@
 					{ "command": "open_recent_project_or_workspace", "args": {"index": 6 } },
 					{ "command": "open_recent_project_or_workspace", "args": {"index": 7 } },
 					{ "caption": "-" },
-					{ "command": "clear_recent_projects_and_workspaces", "caption": "Clear Items" },
-					{ "command": "clear_missing_recent_projects_and_workspaces", "caption": "Remove Deleted" }
+					{ "command": "clear_recent_projects_and_workspaces", "caption": "Öğeleri Temizle" },
+					{ "command": "clear_missing_recent_projects_and_workspaces", "caption": "Eksikleri Sil" }
 				]
 			},
 			{ "caption": "-" },
-			{ "command": "save_project_and_workspace_as", "caption": "Save Project As…", "mnemonic": "A" },
-			{ "command": "close_workspace", "caption": "Close Project", "mnemonic": "C" },
-			{ "command": "open_file", "args": {"file": "${project}"}, "caption": "Edit Project" },
+			{ "command": "save_project_and_workspace_as", "caption": "Projeyi Farklı Kaydet…", "mnemonic": "P" },
+			{ "command": "close_workspace", "caption": "Projeyi Kapat", "mnemonic": "K" },
+			{ "command": "open_file", "args": {"file": "${project}"}, "caption": "Projeyi Düzenle" },
 			{ "caption": "-" },
-			{ "command": "new_window_for_project", "caption": "New Workspace for Project" },
-			{ "command": "save_workspace_as", "caption": "Save Workspace As…", "mnemonic": "A" },
+			{ "command": "new_window_for_project", "caption": "Proje İçin Yeni Çalışma Alanı" },
+			{ "command": "save_workspace_as", "caption": "Çalışma Alanını Farklı Kaydet…", "mnemonic": "Ç" },
 			{ "caption": "-" },
-			{ "command": "prompt_add_folder", "caption": "Add Folder to Project…", "mnemonic": "d" },
-			{ "command": "close_folder_list", "caption": "Remove all Folders from Project", "mnemonic": "m" },
-			{ "command": "refresh_folder_list", "caption": "Refresh Folders", "mnemonic": "e" }
+			{ "command": "prompt_add_folder", "caption": "Projeye Klasör Ekle…", "mnemonic": "K" },
+			{ "command": "close_folder_list", "caption": "Projeden Tüm Klasörleri Kaldır", "mnemonic": "K" },
+			{ "command": "refresh_folder_list", "caption": "Klasörleri Yenile", "mnemonic": "Y" }
 		]
 	},
 	{
-		"caption": "Preferences",
-		"mnemonic": "n",
+		"caption": "Tercihler",
+		"mnemonic": "T",
 		"id": "preferences",
 		"children":
 		[
-			{ "command": "open_dir", "args": {"dir": "$packages"}, "caption": "Browse Packages…", "mnemonic": "B" },
+			{ "command": "open_dir", "args": {"dir": "$packages"}, "caption": "Paketleri Bul…", "mnemonic": "P" },
 			{ "caption": "-" },
 			{
 				"command": "edit_settings", "args":
-				{
-					"base_file": "${packages}/Default/Preferences.sublime-settings",
-					"default": "// Settings in here override those in \"Default/Preferences.sublime-settings\",\n// and are overridden in turn by syntax-specific settings.\n{\n\t$0\n}\n"
-				},
-				"caption": "Settings"
+			{
+				"base_file": "${packages}/Default/Preferences.sublime-settings",
+				"default": "// Buradaki Ayarlar \"Default/Preferences.sublime-settings\" öğesindekileri geçersiz kılar,\n// ve yerine sözdizimine özgü ayarlarla geçersiz kılınır.\n{\n\t$0\n}\n"
 			},
-			{ "command": "edit_syntax_settings", "caption": "Settings – Syntax Specific" },
+				"caption": "Ayarlar"
+			},
+			{ "command": "edit_syntax_settings", "caption": "Ayarlar - Sözdizimine Özel" },
 			{
 				"command": "edit_settings", "args":
-				{
-					"base_file": "${packages}/Default/Distraction Free.sublime-settings",
-					"default": "{\n\t$0\n}\n"
-				},
-				"caption": "Settings – Distraction Free"
+			{
+				"base_file": "${packages}/Default/Distraction Free.sublime-settings",
+				"default": "{\n\t$0\n}\n"
+			},
+				"caption": "Ayarlar - Dikkat Dağılmasın"
 			},
 			{ "caption": "-" },
 			{
 				"command": "edit_settings", "args":
-				{
-					"base_file": "${packages}/Default/Default ($platform).sublime-keymap",
-					"default": "[\n\t$0\n]\n"
-				},
-				"caption": "Key Bindings"
+			{
+				"base_file": "${packages}/Default/Default ($platform).sublime-keymap",
+				"default": "[\n\t$0\n]\n"
+			},
+				"caption": "Tuş Kısayolları"
 			},
 			{
 				"command": "edit_settings", "args":
-				{
-					"base_file": "${packages}/Default/Default ($platform).sublime-mousemap",
-					"default": "[\n\t$0\n]\n"
-				},
-				"caption": "Mouse Bindings"
+			{
+				"base_file": "${packages}/Default/Default ($platform).sublime-mousemap",
+				"default": "[\n\t$0\n]\n"
+			},
+				"caption": "Fare Kısayolları"
 			},
 			{ "caption": "-" },
 			{
-				"caption": "Select Color Scheme…",
+				"caption": "Renk Düzeni Seç…",
 				"command": "select_color_scheme"
 			},
 			{
-				"caption": "Customize Color Scheme",
+				"caption": "Renk Düzenini Özelleştir",
 				"command": "customize_color_scheme"
 			},
 			{ "caption": "-" },
 			{
-				"caption": "Select Theme…",
+				"caption": "Tema Seç…",
 				"command": "select_theme"
 			},
 			{
-				"caption": "Customize Theme",
+				"caption": "Temayı Özelleştir",
 				"command": "customize_theme"
 			},
 			{ "caption": "-" },
 			{
-				"caption": "Font",
+				"caption": "Yazı Tipi",
 				"children":
 				[
-					{ "command": "choose_font", "caption": "Choose…" },
-					{ "command": "increase_font_size", "caption": "Larger" },
-					{ "command": "decrease_font_size", "caption": "Smaller" },
+					{ "command": "choose_font", "caption": "Seç…" },
+					{ "command": "increase_font_size", "caption": "Büyüt" },
+					{ "command": "decrease_font_size", "caption": "Küçült" },
 					{ "caption": "-" },
-					{ "command": "reset_font_size", "caption": "Reset Size" }
+					{ "command": "reset_font_size", "caption": "Boyutu Sıfırla" }
 				]
 			}
 		]
 	},
 	{
-		"caption": "Help",
-		"mnemonic": "H",
+		"caption": "Yardım",
+		"mnemonic": "Y",
 		"id": "help",
 		"children":
 		[
-			{ "command": "open_url", "args": {"url": "https://www.sublimetext.com/docs/"}, "caption": "Documentation" },
-			{ "command": "open_url", "args": {"url": "https://github.com/sublimehq/sublime_text/issues/new/choose"}, "caption": "Report a Bug" },
+			{ "command": "open_url", "args": {"url": "https://www.sublimetext.com/docs/"}, "caption": "Belgeler" },
+			{ "command": "open_url", "args": {"url": "https://github.com/sublimehq/sublime_text/issues/new/choose"}, "caption": "Hata Bildir" },
 			{ "command": "open_url", "args": {"url": "https://twitter.com/sublimehq"}, "caption": "Twitter" },
 			{ "caption": "-" },
-			{ "command": "show_progress_window", "caption": "Indexing Status…" },
+			{ "command": "show_progress_window", "caption": "Durumu İndeksle…" },
 			{ "caption": "-" },
-			{ "command": "purchase_license"},
-			{ "command": "upgrade_license"},
-			{ "command": "show_license_window", "caption": "Enter License" },
-			{ "command": "remove_license"},
+			{ "command": "purchase_license", "caption": "Lisans Satın Al" },
+			{ "command": "upgrade_license", "caption": "Lisans Yükselt" },
+			{ "command": "show_license_window", "caption": "Lisansı Gir" },
+			{ "command": "remove_license", "caption": "Lisansı Kaldır" },
 			{ "caption": "-" },
-			{ "command": "update_check", "caption": "Check for Updates…" },
-			{ "command": "show_changelog", "caption": "Changelog…" },
-			{ "command": "show_attribution", "caption": "Licenses and Attribution…" },
-			{ "command": "show_about_window", "caption": "About Sublime Text", "mnemonic": "A" }
+			{ "command": "update_check", "caption": "Güncellemeleri Kontrol Et…" },
+			{ "command": "show_changelog", "caption": "Değişiklik Günlüğü…" },
+			{ "command": "show_about_window", "caption": "Sublime Text Hakkında", "mnemonic": "H" }
 		]
 	}
 ]
